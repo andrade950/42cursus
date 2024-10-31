@@ -70,6 +70,7 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
       - All functions are implemented following the 42 norminette.
       - Dynamically allocated memory is freed correctly.
       - Includes a `Makefile` to compile the library with various rules for cleaning, compiling with bonus functions, etc.
+      - The `libft.h` header contains declarations for all the functions implemented in the library, making it easier to use and maintain.
 
    - **Makefile**:
       - The `Makefile` automates the compilation process for the `libft` library. It includes several rules that streamline building and cleaning up the library files:
@@ -93,6 +94,30 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
            - Run `make` to compile the library.
            - Use `make clean` or `make fclean` to remove intermediate files and the library.
            - Run `make bonus` to include bonus functions if needed.
+
+   - **libft.h File**:
+      - The `libft.h` file is the main header for the `libft` library. It contains:
+        
+         - **Function Declarations**: All functions implemented in `libft` are declared here. This allows other files that include `libft.h` to use these functions without needing to redeclare them.
+         
+         - **Required Libraries**: It includes essential standard libraries such as `<stdlib.h>`, `<unistd.h>`, and `<string.h>`, ensuring that the functions have access to standard C definitions and functionalities.
+         
+         - **Type and Structure Definitions**: Contains type definitions and structures (such as `t_list`), used for linked list manipulation in the bonus functions. The `t_list` structure, for example, is utilized in `ft_lst*` functions and is defined with members like `content` (to hold the node’s content) and `next` (to point to the next node).
+
+      - **Example of the t_list Structure**:
+        
+        ```c
+        typedef struct s_list
+        {
+            void            *content;
+            struct s_list   *next;
+        } t_list;
+        ```
+
+      - **Purpose**: The `libft.h` serves as a central location for all function declarations and necessary includes for the `libft` library. Once compiled, other projects can simply include `libft.h` to access all functions and structures provided by the library.
+
+      - **Usage**: Any file that wants to use `libft` functions can include `libft.h` with `#include "libft.h"`, making the entire library accessible with a single include line.
+
 
    </details>
 
