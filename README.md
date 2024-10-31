@@ -97,5 +97,3 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
    </details>
 
 ---
-
-As new projects are added, they can be documented in the same format. This helps keep documentation clear and accessible for reviewers and repository users.
