@@ -71,6 +71,7 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui
       - Todas as funções são implementadas seguindo a norminette da 42.
       - Memória alocada dinamicamente é liberada corretamente.
       - Inclui um `Makefile` para compilar a biblioteca e um conjunto de regras para limpar, compilar com bônus, etc.
+      - O cabeçalho `libft.h` contém as declarações de todas as funções implementadas na biblioteca, facilitando sua utilização e manutenção.
 
    - **Makefile**:
       - O `Makefile` automatiza o processo de compilação da biblioteca `libft`. Ele inclui várias regras que simplificam a construção e limpeza dos arquivos da biblioteca:
@@ -94,6 +95,29 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui
            - Execute `make` para compilar a biblioteca.
            - Use `make clean` ou `make fclean` para remover os arquivos intermediários e a biblioteca.
            - Execute `make bonus` para incluir as funções bônus, se necessário.
+
+    - **Arquivo libft.h**:
+         - O arquivo `libft.h` é o cabeçalho principal da biblioteca `libft`. Ele contém:
+        
+            - **Declarações das Funções**: Todas as funções implementadas na `libft` são declaradas aqui. Isso permite que outros arquivos que incluam `libft.h` possam usar essas funções sem precisar                                              redeclará-las.
+         
+            - **Bibliotecas Necessárias**: Inclui as bibliotecas padrão necessárias, como `<stdlib.h>`, `<unistd.h>`, e `<string.h>`, para garantir que as funções tenham acesso às definições padrão e                            funcionalidades da linguagem C.
+         
+            - **Definições de Tipos e Estruturas**: Contém definições de estruturas (como `t_list`), usadas para manipulação de listas encadeadas nas funções bônus. A estrutura `t_list`, por exemplo, é                                     usada nas funções `ft_lst*` e é definida com membros como `content` (para o conteúdo do nó) e `next` (para apontar para o próximo nó).
+
+      - **Exemplo da Estrutura t_list**:
+        
+        ```c
+        typedef struct s_list
+        {
+            void            *content;
+            struct s_list   *next;
+        } t_list;
+        ```
+
+      - **Objetivo**: O `libft.h` serve como um ponto de centralização para todas as declarações e inclusões necessárias para a `libft`. Quando compilado, os outros projetos podem incluir apenas o `libft.h`                      para acessar todas as funções e estruturas oferecidas pela biblioteca.
+
+      - **Utilização**: Qualquer arquivo que queira utilizar funções da `libft` pode incluir `libft.h` com `#include "libft.h"`, facilitando o acesso a toda a biblioteca com uma única linha de inclusão.
 
 
    </details>
