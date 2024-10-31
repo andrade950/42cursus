@@ -2,7 +2,7 @@
 
 [Read in English](README.md)
 
-Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui você encontrará uma coleção de códigos desenvolvidos ao longo do curso, onde exploro várias bibliotecas e funcionalidades em C. Este repositório será atualizado com novos projetos à medida que avanço no currículo.
+Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui encontra uma coleção de códigos desenvolvidos ao longo do curso, onde exploro várias bibliotecas e funcionalidades em C. Este repositório será atualizado com novos projetos à medida que avanço no currículo.
 
 ## 📜 Projetos
 
@@ -88,7 +88,7 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui
            - `CC`: Especifica o compilador, geralmente `gcc`.
            - `CFLAGS`: Contém flags de compilação (por exemplo, `-Wall -Wextra -Werror`), garantindo que o código seja compilado com verificações rigorosas de erro e aviso em conformidade com as normas da                 42.
 
-        - O `Makefile` garante que apenas os arquivos `.c` modificados sejam recompilados, melhorando a eficiência no desenvolvimento e na depuração. Ele segue convenções padrão de `Makefile`, facilitando o             uso para qualquer desenvolvedor familiarizado com `Makefiles`.
+         - O `Makefile` garante que apenas os arquivos `.c` modificados sejam recompilados, melhorando a eficiência no desenvolvimento e na depuração. Ele segue convenções padrão de `Makefile`, facilitando o             uso para qualquer desenvolvedor familiarizado com `Makefiles`.
 
         - **Exemplos de Uso**:
            - Execute `make` para compilar a biblioteca.
