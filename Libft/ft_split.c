@@ -94,7 +94,7 @@ char	**ft_split(char const *s, char c)
 				s++;
 		}
 	}
-	array[i] = '\0';
+	array[i] = NULL;
 	return (array);
 }
 
