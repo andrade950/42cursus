@@ -60,22 +60,16 @@ char	*ft_itoa(int n)
 
 /*int	main(void)
 {
-	int numbers[] = {0, 123, -456, 7890, 
-		-2147483648, 2147483647}; // Casos de teste
-	int i;
 	char *result;
-
-	for (i = 0; i < 6; i++)
+	
+	result = ft_itoa(-456);
+	if (result == NULL)
 	{
-		result = ft_itoa(numbers[i]); // Converte o número para string
-		if (result == NULL)
-		{
-			printf("Memory allocation failed for number %d.\n", numbers[i]);
-			return (1);
-		}
-		printf("ft_itoa(%d) = %s\n", numbers[i], result); // Exibe o resultado
-		free(result); // Libera a memória alocada por `ft_itoa`
+		printf("Memory allocation failed for number -456.\n");
+		return (1);
 	}
-
+	printf("ft_itoa(-456) = %s\n", result);
+	free(result);
+	
 	return (0);
 }*/
