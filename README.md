@@ -4,7 +4,9 @@
 
 Welcome to the repository of my projects developed in the **42 Cursus**! Here you'll find a collection of codes created throughout the course, where I explore various libraries and functionalities in C. This repository will be updated with new projects as I progress through the curriculum.
 
-# 1. **Libft**  
+## Projects Rank 00
+
+### 1. **Libft**  
    A personal library that reproduces standard C library functions, enabling their use in other cursus projects.
 
    <details>
@@ -80,7 +82,7 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
            - `make re`: This rule is a shortcut that runs `make fclean` followed by `make all`, effectively rebuilding the library from scratch.
 
          - **Bonus Rule**:
-           - `make bonus`: Compiles additional bonus functions and includes them in the `libft.a` library. These bonus functions provide additional functionality, such as handling linked lists (`ft_lst*` functions), which are often required in other projects of the cursus.
+           - `make bonus`: Compiles additional bonus functions and includes them in the `libft.a` library. These bonus functions provide additional functionality, such as handling linked lists (`ft_lst*` functions), which are often required in other                   projects of the cursus.
 
          - **Variables**:
            - `CC`: Specifies the compiler, usually `gcc`.
@@ -100,7 +102,7 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
          
          - **Required Libraries**: It includes essential standard libraries such as `<stdlib.h>`, `<unistd.h>`, and `<string.h>`, ensuring that the functions have access to standard C definitions and functionalities.
          
-         - **Type and Structure Definitions**: Contains type definitions and structures (such as `t_list`), used for linked list manipulation in the bonus functions. The `t_list` structure, for example, is utilized in `ft_lst*` functions and is defined with members like `content` (to hold the node’s content) and `next` (to point to the next node).
+         - **Type and Structure Definitions**: Contains type definitions and structures (such as `t_list`), used for linked list manipulation in the bonus functions. The `t_list` structure, for example, is utilized in `ft_lst*` functions and is                      defined with members like `content` (to hold the node’s content) and `next` (to point to the next node).
 
       - **Example of the t_list Structure**:
         
@@ -112,11 +114,10 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
         } t_list;
         ```
 
-      - **Purpose**: The `libft.h` serves as a central location for all function declarations and necessary includes for the `libft` library. Once compiled, other projects can simply include `libft.h` to access all functions and structures provided by the library.
+      - **Purpose**: The `libft.h` serves as a central location for all function declarations and necessary includes for the `libft` library. Once compiled, other projects can simply include `libft.h` to access all functions and structures provided by             the library.
 
       - **Usage**: Any file that wants to use `libft` functions can include `libft.h` with `#include "libft.h"`, making the entire library accessible with a single include line.
-
-
+        
    </details>
 
----
+   --- 
