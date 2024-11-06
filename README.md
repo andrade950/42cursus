@@ -4,9 +4,7 @@
 
 Welcome to the repository of my projects developed in the **42 Cursus**! Here you'll find a collection of codes created throughout the course, where I explore various libraries and functionalities in C. This repository will be updated with new projects as I progress through the curriculum.
 
-## 📜 Projects
-
-1. **Libft**  
+# 1. **Libft**  
    A personal library that reproduces standard C library functions, enabling their use in other cursus projects.
 
    <details>
