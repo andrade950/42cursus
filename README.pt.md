@@ -4,7 +4,9 @@
 
 Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui encontra uma coleção de códigos desenvolvidos ao longo do curso, onde exploro várias bibliotecas e funcionalidades em C. Este repositório será atualizado com novos projetos à medida que avanço no currículo.
 
-# 1. **Libft**  
+## Projetos Rank 00
+
+### 1. **Libft**  
    Uma biblioteca pessoal que reproduz funções da biblioteca padrão do C, permitindo utilizá-las em outros projetos do cursus.
 
    <details>
@@ -94,7 +96,7 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui
            - Use `make clean` ou `make fclean` para remover os arquivos intermediários e a biblioteca.
            - Execute `make bonus` para incluir as funções bônus, se necessário.
 
-    - **Arquivo libft.h**:
+         - **Arquivo libft.h**:
          - O arquivo `libft.h` é o cabeçalho principal da biblioteca `libft`. Ele contém:
         
             - **Declarações das Funções**: Todas as funções implementadas na `libft` são declaradas aqui. Isso permite que outros arquivos que incluam `libft.h` possam usar essas funções sem precisar                                              redeclará-las.
