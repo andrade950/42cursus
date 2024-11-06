@@ -6,11 +6,11 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
 
 ## Projects Rank 00
 
-### 1. **libft**  
+### 1. **Libft**  
    A personal library that reproduces standard C library functions, enabling their use in other cursus projects.
 
    <details>
-     <summary>ℹ️ libft Project Details</summary>
+     <summary>ℹ️ Libft Project Details</summary>
 
    - **Objective**: Create a personal library, `libft.a`, containing various general-use functions, such as string manipulation, conversion, and memory handling.
    - **Implemented Functions**:
