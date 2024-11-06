@@ -96,14 +96,14 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui
            - Use `make clean` ou `make fclean` para remover os arquivos intermediários e a biblioteca.
            - Execute `make bonus` para incluir as funções bônus, se necessário.
 
-         - **Arquivo libft.h**:
-         - O arquivo `libft.h` é o cabeçalho principal da biblioteca `libft`. Ele contém:
+   - **Arquivo libft.h**:
+     - O arquivo `libft.h` é o cabeçalho principal da biblioteca `libft`. Ele contém:
         
-            - **Declarações das Funções**: Todas as funções implementadas na `libft` são declaradas aqui. Isso permite que outros arquivos que incluam `libft.h` possam usar essas funções sem precisar                                              redeclará-las.
+         - **Declarações das Funções**: Todas as funções implementadas na `libft` são declaradas aqui. Isso permite que outros arquivos que incluam `libft.h` possam usar essas funções sem precisar                                              redeclará-las.
          
-            - **Bibliotecas Necessárias**: Inclui as bibliotecas padrão necessárias, como `<stdlib.h>`, `<unistd.h>`, e `<string.h>`, para garantir que as funções tenham acesso às definições padrão e                            funcionalidades da linguagem C.
+         - **Bibliotecas Necessárias**: Inclui as bibliotecas padrão necessárias, como `<stdlib.h>`, `<unistd.h>`, e `<string.h>`, para garantir que as funções tenham acesso às definições padrão e                            funcionalidades da linguagem C.
          
-            - **Definições de Tipos e Estruturas**: Contém definições de estruturas (como `t_list`), usadas para manipulação de listas encadeadas nas funções bônus. A estrutura `t_list`, por exemplo, é                                     usada nas funções `ft_lst*` e é definida com membros como `content` (para o conteúdo do nó) e `next` (para apontar para o próximo nó).
+         - **Definições de Tipos e Estruturas**: Contém definições de estruturas (como `t_list`), usadas para manipulação de listas encadeadas nas funções bônus. A estrutura `t_list`, por exemplo, é                                     usada nas funções `ft_lst*` e é definida com membros como `content` (para o conteúdo do nó) e `next` (para apontar para o próximo nó).
 
       - **Exemplo da Estrutura t_list**:
         
