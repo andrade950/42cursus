@@ -6,11 +6,11 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui
 
 ## Projetos Rank 00
 
-### 1. **Libft**  
+### 1. **libft**  
    Uma biblioteca pessoal que reproduz funções da biblioteca padrão do C, permitindo utilizá-las em outros projetos do cursus.
 
    <details>
-     <summary>ℹ️ Detalhes do Projeto Libft</summary>
+     <summary>ℹ️ Detalhes do Projeto libft</summary>
 
    - **Objetivo**: Criar uma biblioteca pessoal, `libft.a`, contendo várias funções de uso geral, como manipulação de strings, conversão e manipulação de memória.
    - **Funções Implementadas**:
