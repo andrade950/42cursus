@@ -35,20 +35,21 @@ AR = ar rcs
 all: $(NAME)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
-	$(AR) $(NAME) $(OBJ)
+	@$(AR) $(NAME) $(OBJ)
+	@echo "$(NAME) created"
 
 bonus: $(NAME) $(BONUS_OBJ)
-	$(AR) $(NAME) $(BONUS_OBJ)
+	@$(AR) $(NAME) $(BONUS_OBJ)
 
 clean:
-	$(RM) $(OBJ) $(BONUS_OBJ)
+	@$(RM) $(OBJ) $(BONUS_OBJ)
 	@echo "objects deleted"
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 	@echo "libft deleted"
 
 re: fclean all
