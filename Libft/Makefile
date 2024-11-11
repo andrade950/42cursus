@@ -43,6 +43,7 @@ $(NAME): $(OBJ)
 
 bonus: $(NAME) $(BONUS_OBJ)
 	@$(AR) $(NAME) $(BONUS_OBJ)
+	@echo "bonus created"
 
 clean:
 	@$(RM) $(OBJ) $(BONUS_OBJ)
