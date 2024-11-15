@@ -12,27 +12,14 @@
 
 #include "../include/ft_printf.h"
 
-static int	hex_count(unsigned long nbr, char *base)
-{
-	int	i;
-
-	i = 0;
-	if (nbr >= 16)
-		i += hex_count(nbr / 16, base);
-	i += ft_putchar(base[nbr % 16]);
-	return (i);
-}
-
 int	ft_putptr(unsigned long ptr)
 {
-	char	*base;
 	int		i;
 
-	base = "0123456789abcdef";
-	if (ptr == 0)
-		return (ft_putstr("(nill)"));
 	i = 0;
+	if (!ptr)
+		return (ft_putstr("(nil)"));
 	i += ft_putstr("0x");
-	i += hex_count(ptr, base);
+	i += ft_puthexa(ptr, 'x');
 	return (i);
 }
