@@ -11,7 +11,6 @@
 # **************************************************************************** #
 
 NAME = libftprintf.a
-CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 
@@ -24,7 +23,7 @@ OBJS = $(SRCS:.c=.o)
 all: $(NAME)
 
 %.o: %.c
-	@gcc $(CFLAGS) $(INCLUDES) -c $< -o $@
+	@cc $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
