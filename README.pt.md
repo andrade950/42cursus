@@ -123,3 +123,65 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui
    </details>
 
 ---
+
+## Projetos Rank 01
+
+### 2. ft_printf  
+Uma implementação personalizada da versátil função `printf`, aprimorando as habilidades de programação em C ao lidar com funções variádicas e saída formatada.
+
+<details>
+  <summary>ℹ️ Detalhes do Projeto ft_printf</summary>
+
+- **Objetivo**: Desenvolver uma biblioteca, `libftprintf.a`, contendo uma versão personalizada da função `printf`, chamada `ft_printf()`, para imitar o comportamento da função padrão da biblioteca C `printf`.
+
+- **Funcionalidades Implementadas**:
+
+  | Conversão   | Descrição                                                                                         |
+  |-------------|--------------------------------------------------------------------------------------------------|
+  | `%c`        | Imprime um único caractere                                                                        |
+  | `%s`        | Imprime uma string                                                                                |
+  | `%p`        | Imprime um endereço de ponteiro no formato hexadecimal                                            |
+  | `%d`        | Imprime um número decimal (base 10)                                                              |
+  | `%i`        | Imprime um inteiro na base 10                                                                    |
+  | `%u`        | Imprime um número decimal sem sinal (base 10)                                                    |
+  | `%x`        | Imprime um número em hexadecimal (base 16) em letras minúsculas                                  |
+  | `%X`        | Imprime um número em hexadecimal (base 16) em letras maiúsculas                                  |
+  | `%%`        | Imprime um símbolo de porcentagem literal                                                        |
+
+- **Destaques**:
+  - Utiliza funções variádicas (`va_start`, `va_arg`, `va_end`) para lidar com um número variável de argumentos.
+  - Oferece saída formatada usando gerenciamento de buffer mínimo, conforme as restrições do projeto.
+  - Totalmente compatível com `libft`, permitindo sua integração em projetos futuros da 42.
+  - A biblioteca é avaliada em comparação com a `printf` padrão para garantir precisão e desempenho.
+
+- **Normas do Projeto**:
+  - O código segue estritamente as regras da norminette da 42.
+  - A memória alocada dinamicamente é liberada corretamente, garantindo a ausência de vazamentos.
+  - Inclui um `Makefile` robusto para compilar a biblioteca com diferentes regras.
+
+- **Makefile**:
+  - Automatiza o processo de construção da biblioteca `ft_printf`, garantindo simplicidade e consistência.
+  - **Regras**:
+    - `make` ou `make all`: Compila a biblioteca `libftprintf.a`.
+    - `make clean`: Remove os arquivos objeto (`.o`).
+    - `make fclean`: Remove todos os arquivos compilados, incluindo `libftprintf.a`.
+    - `make re`: Recompila o projeto do zero.
+    - `make bonus`: Compila e inclui funcionalidades bônus, se presentes.
+
+- **Exemplo de Uso**:
+  ```c
+  #include "ft_printf.h"
+
+  int main() {
+      ft_printf("Olá, %s! A resposta é %d.\n", "mundo", 42);
+      return 0;
+  }
+
+- **Desafios e Aprendizado**:
+  - Compreender e implementar funções variádicas em C.
+  - Gerenciar a análise e a saída de strings formatadas.
+  - Emular o comportamento de uma função amplamente utilizada da biblioteca padrão.
+
+</details>
+
+---
