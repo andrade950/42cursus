@@ -22,9 +22,6 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-%.o: %.c
-	@cc $(CFLAGS) $(INCLUDES) -c $< -o $@
-
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
 	@echo "$(NAME) created"
