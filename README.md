@@ -187,7 +187,7 @@ A custom implementation of the versatile `printf` function, enhancing the founda
 A function that returns lines read from a file descriptor, exploring concepts like static variables in C.
 
 <details>
-  <summary>ℹ️ Get Next Line Project Details</summary>
+  <summary>ℹ️ get_next_line Project Details</summary>
 
 - **Objective**: Develop the `get_next_line()` function that returns a line read from a file descriptor, including the newline character (`\n`) if present.
 
