@@ -252,7 +252,7 @@ Uma função que retorna linhas lidas de um descritor de arquivo, explorando con
 
 - **Considerações Importantes**:
 
-  - Testar com valores de BUFFER_SIZE variados (e.g., 1, 42, 9999).
+  - Testar com valores de `BUFFER_SIZE` variados (e.g., 1, 42, 9999).
   - Garantir que a função leia o mínimo necessário para retornar cada linha.
   - Tratar erros como ponteiros nulos e descritores inválidos.
 
