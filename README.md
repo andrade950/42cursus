@@ -183,7 +183,7 @@ A custom implementation of the versatile `printf` function, enhancing the founda
 
 </details>
 
-### 3. **Get Next Line**  
+### 3. **get_next_line**  
 A function that returns lines read from a file descriptor, exploring concepts like static variables in C.
 
 <details>
