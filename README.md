@@ -183,4 +183,77 @@ A custom implementation of the versatile `printf` function, enhancing the founda
 
 </details>
 
+### 3. **Get Next Line**  
+A function that returns lines read from a file descriptor, exploring concepts like static variables in C.
+
+<details>
+  <summary>ℹ️ Get Next Line Project Details</summary>
+
+- **Objective**: Develop the `get_next_line()` function that returns a line read from a file descriptor, including the newline character (`\n`) if present.
+
+- **Requirements**:
+  - Repeated calls to `get_next_line()` should allow reading the file line by line.
+  - If there is nothing left to read or an error occurs, the function should return `NULL`.
+  - It should work for both file reading and standard input (`stdin`).
+  - The returned line should include the newline character unless the end of the file is reached and it doesn't end with `\n`.
+
+- **Function Name and Files**:
+  - Function: `get_next_line`
+  - Files: `get_next_line.c`, `get_next_line_utils.c`, `get_next_line.h`
+
+- **Parameters and Return Value**:
+  - Parameters:
+    - `fd`: the file descriptor to read from.
+  - Return:
+    - A string containing the read line, or `NULL` if there is nothing more to read or if an error occurred.
+
+- **Allowed External Functions**:
+  - `read`, `malloc`, `free`
+
+- **Project Guidelines**:
+  - The code must comply with the 42 *norminette*.
+  - Dynamically allocated memory must be properly freed, with no leaks.
+  - The project must include a `Makefile` with the rules: `$(NAME)`, `all`, `clean`, `fclean`, `re`, and `bonus`.
+
+- **Challenges**:
+  - Efficiently use static variables to store unprocessed data between calls.
+  - Handle different buffer sizes and unpredictable behavior from file descriptors.
+
+- **Makefile**:
+  - The code must be compiled with the flags `-Wall -Wextra -Werror`.
+  - It must support the `-D BUFFER_SIZE=n` flag to dynamically alter the buffer size.
+
+- **Prototype**:
+  ```c
+  char *get_next_line(int fd);
+
+- **Bonus**:
+   - Implementation that supports multiple file descriptors simultaneously.
+   - Use only one static variable.
+
+- **Example Usage**:
+  ```c
+  #include "get_next_line.h"
+  #include <fcntl.h>
+  #include <stdio.h>
+
+  int main() {
+    int fd = open("file.txt", O_RDONLY);
+    char *line;
+
+    while ((line = get_next_line(fd)) != NULL) {
+        printf("%s", line);
+        free(line);
+    }
+    close(fd);
+    return 0;
+  }
+
+- **Important Considerations**:
+   - Test with various `BUFFER_SIZE` values (e.g., 1, 42, 9999).
+   - Ensure that the function reads only what is necessary to return each line.
+   - Handle errors such as null pointers and invalid file descriptors.
+
+</details> 
+
 ---
