@@ -184,4 +184,78 @@ Uma implementação personalizada da versátil função `printf`, aprimorando as
 
 </details>
 
+### 3. **Get Next Line**  
+Uma função que retorna linhas lidas de um descritor de arquivo, explorando conceitos como variáveis estáticas em C.
+
+<details>
+  <summary>ℹ️ Detalhes do Projeto Get Next Line</summary>
+
+- **Objetivo**: Desenvolver a função `get_next_line()` que retorna uma linha lida de um descritor de arquivo, incluindo o caractere de nova linha (`\n`) se presente.
+
+- **Requisitos**:
+  - Repetidas chamadas a `get_next_line()` devem permitir ler o arquivo linha por linha.
+  - Se não houver mais nada para ler ou ocorrer um erro, a função deve retornar `NULL`.
+  - Deve funcionar tanto para leitura de arquivos quanto para entrada padrão (`stdin`).
+  - O retorno deve incluir o caractere de nova linha, exceto no final do arquivo se não houver `\n`.
+
+- **Nome e Arquivos**:
+  - Função: `get_next_line`
+  - Arquivos: `get_next_line.c`, `get_next_line_utils.c`, `get_next_line.h`
+
+- **Parâmetros e Valor de Retorno**:
+  - Parâmetros:
+    - `fd`: o descritor de arquivo para leitura.
+  - Retorno:
+    - Uma string contendo a linha lida ou `NULL` caso não haja mais nada para ler ou ocorra um erro.
+
+- **Funções Externas Permitidas**:
+  - `read`, `malloc`, `free`
+
+- **Normas do Projeto**:
+  - Todo o código deve estar em conformidade com a *norminette* da 42.
+  - Memória alocada deve ser devidamente liberada, sem vazamentos.
+  - O projeto deve incluir um `Makefile` com as regras: `$(NAME)`, `all`, `clean`, `fclean`, `re`, e `bonus`.
+
+- **Desafios**:
+  - Utilizar variáveis estáticas de forma eficiente para armazenar dados não processados entre chamadas.
+  - Lidar com tamanhos de buffer diferentes e comportamento imprevisível de descritores de arquivo.
+
+- **Makefile**:
+  - Deve compilar o código com os flags `-Wall -Wextra -Werror`.
+  - Deve suportar a flag `-D BUFFER_SIZE=n` para alterar dinamicamente o tamanho do buffer.
+
+- **Prototipagem**:
+  ```c
+  char *get_next_line(int fd);
+
+- **Bônus**:
+  - Implementação que suporta múltiplos descritores de arquivo simultaneamente.
+  - Utilizar apenas uma variável estática.
+ 
+- **Exemplo de Uso**:
+  ```c
+  #include "get_next_line.h"
+  #include <fcntl.h>
+  #include <stdio.h>
+
+  int main() {
+    int fd = open("arquivo.txt", O_RDONLY);
+    char *linha;
+
+    while ((linha = get_next_line(fd)) != NULL) {
+        printf("%s", linha);
+        free(linha);
+    }
+    close(fd);
+    return 0;
+  }
+
+- **Considerações Importantes**:
+
+  - Testar com valores de `BUFFER_SIZE` variados (e.g., 1, 42, 9999).
+  - Garantir que a função leia o mínimo necessário para retornar cada linha.
+  - Tratar erros como ponteiros nulos e descritores inválidos.
+
+</details>
+
 ---
