@@ -214,15 +214,10 @@ Uma função que retorna linhas lidas de um descritor de arquivo, explorando con
 - **Normas do Projeto**:
   - Todo o código deve estar em conformidade com a *norminette* da 42.
   - Memória alocada deve ser devidamente liberada, sem vazamentos.
-  - O projeto deve incluir um `Makefile` com as regras: `$(NAME)`, `all`, `clean`, `fclean`, `re`, e `bonus`.
 
 - **Desafios**:
   - Utilizar variáveis estáticas de forma eficiente para armazenar dados não processados entre chamadas.
   - Lidar com tamanhos de buffer diferentes e comportamento imprevisível de descritores de arquivo.
-
-- **Makefile**:
-  - Deve compilar o código com os flags `-Wall -Wextra -Werror`.
-  - Deve suportar a flag `-D BUFFER_SIZE=n` para alterar dinamicamente o tamanho do buffer.
 
 - **Prototipagem**:
   ```c
