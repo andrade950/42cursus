@@ -184,7 +184,7 @@ Uma implementação personalizada da versátil função `printf`, aprimorando as
 
 </details>
 
-### 3. **Get Next Line**  
+### 3. **get_next_line**  
 Uma função que retorna linhas lidas de um descritor de arquivo, explorando conceitos como variáveis estáticas em C.
 
 <details>
