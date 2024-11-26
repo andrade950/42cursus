@@ -188,7 +188,7 @@ Uma implementação personalizada da versátil função `printf`, aprimorando as
 Uma função que retorna linhas lidas de um descritor de arquivo, explorando conceitos como variáveis estáticas em C.
 
 <details>
-  <summary>ℹ️ Detalhes do Projeto Get Next Line</summary>
+  <summary>ℹ️ Detalhes do Projeto get_next_line</summary>
 
 - **Objetivo**: Desenvolver a função `get_next_line()` que retorna uma linha lida de um descritor de arquivo, incluindo o caractere de nova linha (`\n`) se presente.
 
