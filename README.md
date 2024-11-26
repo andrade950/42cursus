@@ -213,15 +213,10 @@ A function that returns lines read from a file descriptor, exploring concepts li
 - **Project Guidelines**:
   - The code must comply with the 42 *norminette*.
   - Dynamically allocated memory must be properly freed, with no leaks.
-  - The project must include a `Makefile` with the rules: `$(NAME)`, `all`, `clean`, `fclean`, `re`, and `bonus`.
 
 - **Challenges**:
   - Efficiently use static variables to store unprocessed data between calls.
   - Handle different buffer sizes and unpredictable behavior from file descriptors.
-
-- **Makefile**:
-  - The code must be compiled with the flags `-Wall -Wextra -Werror`.
-  - It must support the `-D BUFFER_SIZE=n` flag to dynamically alter the buffer size.
 
 - **Prototype**:
   ```c
