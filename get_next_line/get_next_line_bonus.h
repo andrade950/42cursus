@@ -14,11 +14,9 @@
 # define GET_NEXT_LINE_BONUS_H
 
 # include <stdlib.h>
-# include <unistd.h>
-# include <stdio.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 10
+#  define BUFFER_SIZE 1000
 # endif
 
 char	*get_next_line(int fd);
