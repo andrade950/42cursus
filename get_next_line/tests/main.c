@@ -37,8 +37,5 @@ int main(int argc, char **argv)
         printf("%s", line);
         free(line);
     }
-
-    close(fd);
     return (0);
 }
-
