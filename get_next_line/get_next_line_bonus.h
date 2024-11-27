@@ -22,11 +22,11 @@
 # endif
 
 char	*get_next_line(int fd);
-char	*ft_chunckjoin(int fd, char *buffer);
-char	*ft_finalstr(char *buffer);
-char	*ft_nextgnl(char *buffer);
-char	*ft_search_nl(const char *x, int flag);
-int		ft_bufferlen(char *x);
-char	*ft_strchunckjoin(char *buffer, char *chunck);
+char	*ft_read_to_left_str(int fd, char *left_str);
+char	*ft_strchr(char *s, int c);
+size_t	ft_strlen(char *s);
+char	*ft_strjoin(char *left_str, char *buff);
+char	*ft_get_line(char *left_str);
+char	*ft_new_left_str(char *left_str);
 
 #endif
