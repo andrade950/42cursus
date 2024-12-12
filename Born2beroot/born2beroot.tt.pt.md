@@ -11,8 +11,9 @@
 
 > ### 2.2
 > Escolher o nome e a pasta
+
 > [!Warning]
-> Certifique-se de armazenar na pasta sgoinfre, que está localizada no servidor da 42.
+> Certifique-se de armazenar na pasta `sgoinfre`, que está localizada no servidor da 42.
 > <br/>Este passo é essencial para evitar ficar sem espaço na sessão, o que levaria a falhas na instalação.
 <img width="835" src="Screenshots/img2.png">
 </br>
