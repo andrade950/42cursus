@@ -10,7 +10,7 @@
 </br>
 
 > ### 2.2
-> Escolher o nome e a pasta
+> Escolher o nome e a pasta.
 
 > [!Warning]
 > Certifique-se de armazenar na pasta `sgoinfre`, que está localizada no servidor da 42.
@@ -19,17 +19,17 @@
 </br>
 
 > ### 2.3
-> Selecione a memória total `RAM` reservada para a máquina (1024)
+> Selecione a memória total `RAM` reservada para a máquina (1024).
 <img width="835" src="Screenshots/img3.png">
 </br>
 
 > ### 2.4
-> Defina o tamanho do disco rígido `(8Gb)`
+> Defina o tamanho do disco rígido `(8Gb)`.
 <img width="835" src="Screenshots/img4.png">
 </br>
 
 > ### 2.5
-> Então clique em `terminar`
+> Então clique em `Finish`.
 <img width="835" src="Screenshots/img5.png">
 </br>
 
@@ -39,22 +39,22 @@
 </br>
 
 > ### 2.7
-> `Armazenamento` > `Controlador IDE` > `vazio`
+> `Armazenamento` > `Controlador IDE` > `vazio`.
 <img width="835" src="Screenshots/img7.png">
 </br>
 
 > ### 2.8
-> Clique no 💿 dentro de **Unidade Óptica** e selecione `Choose Disk File`
+> Clique no 💿 dentro de **Unidade Óptica** e selecione `Choose Disk File`.
 <img width="835" src="Screenshots/img9.png">
 </br>
 
 > ### 2.9
-> Selecione o arquivo `ISO` baixado e clique no `OK`
+> Selecione o arquivo `ISO` baixado e clique no `OK`.
 <img width="835" src="Screenshots/img10.png">
 </br>
 
 > ### 2.10
-> Agora, basta clicar em `Iniciar` para começar a instalação do ISO na máquina virtual
+> Agora, basta clicar em `Iniciar` para começar a instalação do ISO na máquina virtual.
 <img width="835" src="Screenshots/img11.png">
 </br>
 
