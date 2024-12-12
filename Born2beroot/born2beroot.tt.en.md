@@ -1,4 +1,6 @@
-# Born2beroot Tutorial
+# Born2beroot Tutorial in English
+
+[Ver Tutorial em Português](born2beroot.tt.pt.md)
 
 ## 1. Download the `ISO` file
 [![Debian](https://img.shields.io/badge/Debian_iso-Download-D70A53?style=for-the-badge&logo=debian&logoColor=white)](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.8.0-amd64-netinst.iso)
@@ -34,313 +36,313 @@
 </br>
 
 > ### 2.6
-> Agora, vamos adicionar o arquivo ISO clicando em `definiçoes`.
+> Now, let's add the ISO file by clicking on `Settings`.
 <img width="835" src="Screenshots/img6.png">
 </br>
 
 > ### 2.7
-> `Armazenamento` > `Controlador IDE` > `vazio`.
+> `Storage` > `IDE Controller` > `Empty`.
 <img width="835" src="Screenshots/img7.png">
 </br>
 
 > ### 2.8
-> Clique no 💿 dentro de **Unidade Óptica** e selecione `Choose Disk File`.
+> Click the 💿 icon under Optical Drive and select `Choose Disk File`.
 <img width="835" src="Screenshots/img9.png">
 </br>
 
 > ### 2.9
-> Selecione o arquivo `ISO` baixado e clique no `OK`.
+> Select the downloaded `ISO` file and click `OK`.
 <img width="835" src="Screenshots/img10.png">
 </br>
 
 > ### 2.10
-> Agora, basta clicar em `Iniciar` para começar a instalação do ISO na máquina virtual.
+> Now, just click `Start` to begin the ISO installation on the virtual machine.
 <img width="835" src="Screenshots/img11.png">
 </br>
 
-## 3. 🌀 Instalação do Debian
+## 3. 🌀 Installing Debian
 > [!Warning]
-> Use a tecla a tecla `Right Ctrl` para capturar ou libertar o rato na máquina virtual.
-> </br>Pressione a tecla **Enter** para confirmar uma ação e use as **Setas** para navegar pelas opções.
+> Use the `Right Ctrl` key to capture or release the mouse in the virtual machine
+> </br>Press **Enter** to confirm an action and use the **Arrow Keys** to navigate the options.
 
-> ### 3.1 Preparação da Instalação
-> Selecionar Versão Sem Interface Gráfica.
-> </br>O projeto Born2beroot exige um ambiente apenas de linha de comando, então escolha a versão sem interface gráfica.
+> ### 3.1 Installation Preparation
+> Select Non-Graphical Version.
+> </br>The Born2beroot project requires a command-line-only environment, so choose the non-graphical version.
 <img width="835" src="Screenshots/img12.png">
 </br>
 
-> ### 3.2: Seleção de Idioma e Localização
+> ### 3.2: Language and Location Selection
 
 > ### 3.2.1
-> Escolha o idioma da instalação. O padrão é Inglês.
+> Choose the installation language. The default is English.
 <img width="835" src="Screenshots/img13.png">
 </br>
 
 > ### 3.2.2
-> Escolha o seu país, se não estiver listado, use a opção "Other" para encontrar o seu continente.
+> Choose your country. If not listed, use the `Other` option to find your continent.
 <img width="835" src="Screenshots/img14.png">
 </br>
 
 > ### 3.2.3
-> Selecione o seu continente.
+> Select your continent.
 <img width="835" src="Screenshots/img15.png">
 </br>
 
 > ### 3.2.4
-> Agora selecione o seu país.
+> Now select your country.
 <img width="835" src="Screenshots/img16.png">
 </br>
 
 > ### 3.2.5
-> Escolha Estados Unidos.
+> Choose the United States.
 <img width="835" src="Screenshots/img17.png">
 </br>
 
 > ### 3.2.6
 > Selecione o layout correto do teclado.
-> </br>Se não tiver a certeza sobre seu layout, consulte [Layouts de Teclado](https://keyshorts.com/blogs/blog/44712961-how-to-identify-laptop-keyboard-localization).
+> </br>If you're unsure about your layout, check [Keyboard Layouts](https://keyshorts.com/blogs/blog/44712961-how-to-identify-laptop-keyboard-localization).
 <img width="835" src="Screenshots/img18.png">
 </br>
 
-> ### 3.3: Configuração de Hostname e Usuário
+> ### 3.3: Configuring Hostname and User
 
 > ### 3.3.1
-> Defina o hostname da máquina como seu login seguido de 42, conforme as diretrizes do projeto.
+> Set the machine's hostname to your login followed by 42, as per the project guidelines.
 <img width="835" src="Screenshots/img19.png">
 </br>
 
 > ### 3.3.2
-> Deixe este campo em branco, pois o projeto não menciona a necessidade de um domínio.
+> Leave this field blank, as the project does not mention the need for a domain.
 <img width="835" src="Screenshots/img20.png">
 </br>
 
 > ### 3.3.3
-> Defina uma senha para o root (administrador do sistema)
+> Set a password for the root (system administrator).
 <img width="835" src="Screenshots/img21.png">
 </br>
 
 > ### 3.3.4
-> Repita a senha novamente
+> Repeat the password.
 <img width="835" src="Screenshots/img22.png">
 </br>
 
 > ### 3.3.5
-> Crie um usuário adicional com seu login para uso "diário" (não root)
+> Create an additional user with your login for "daily" (non-root) use.
 <img width="835" src="Screenshots/img23.png">
 </br>
 
 > ### 3.3.6
-> Insira a senha do novo usuário.
-> </br>Recomendo sempre usar a mesma senha para facilitar e simplificar.
+> Enter the password for the new user.
+> </br>I recommend using the same password for simplicity.
 <img width="835" src="Screenshots/img25.png">
 </br>
 
 > ### 3.3.7
-> Repita a senha novamente
+> Repeat the password.
 <img width="835" src="Screenshots/img26.png">
 </br>
 
-> ### 3.4: Configuração do Fuso Horário
+> ### 3.4: Time Zone Configuration
 
 > ### 3.4.1
-> Escolha a região correspondente ao seu país.
+> Choose the region corresponding to your country.
 <img width="835" src="Screenshots/img27.png">
 </br>
 
 > ### 3.4.2
-> Selecione “Guided - use entire disk and set up encrypted LVM” para configurar partições com LVM encriptado.
+> Select “Guided - use entire disk and set up encrypted LVM” to configure partitions with encrypted LVM.
 <img width="835" src="Screenshots/img28.png">
 </br>
 
 > ### 3.4.3
-> Escolha o disco que deseja particionar (normalmente o único disponível).
+> Choose the disk you want to partition (usually the only one available).
 <img width="835" src="Screenshots/img29.png">
 </br>
 
 > ### 3.4.4
-> Escolha `Separate /home partition`.
+> Choose `Separate /home partition`.
 <img width="835" src="Screenshots/img30.png">
 </br>
 
 > ### 3.4.5
-> Selecione `Yes` para confirmar a gravação das alterações.
+> Select `Yes` to confirm saving the changes.
 <img width="835" src="Screenshots/img31.png">
 </br>
 
 > ### 3.4.6
-> Clique em `Cancel` para evitar a exclusão de dados no disco.
+> Click `Cancel` to avoid deleting data on the disk.
 <img width="835" src="Screenshots/img32.png">
 </br>
 
 > ### 3.4.7
-> Defina uma senha para a encriptação do disco e guarde-a para uso futuro.
+> Set a password for disk encryption and save it for future use.
 <img width="835" src="Screenshots/img33.png">
 </br>
 
 > ### 3.4.8
-> Repita a senha de encriptação.
+> Repeat the encryption password.
 <img width="835" src="Screenshots/img34.png">
 </br>
 
 > ### 3.4.9
-> Insira `max` ou o valor máximo mostrado para alocar todo o espaço.
+> Enter `max` or the maximum value shown to allocate all space.
 <img width="835" src="Screenshots/img35.png">
 </br>
 
-> ### 3.5: Finalização do Particionamento
+> ### 3.5: Partitioning Finalization
 
 > ### 3.5.1
-> Selecione `Finish partitioning and write changes to disk`.
+> Select `Finish partitioning and write changes to disk`.
 <img width="835" src="Screenshots/img36.png">
 </br>
 
 > ### 3.5.2
-> Escolha a opção `Yes` para continuar e confirmar que não deseja fazer mais alterações no disco.
+> Choose `Yes` to continue and confirm you do not want to make further disk changes.
 <img width="835" src="Screenshots/img37.png">
 </br>
 
-> ### 3.6: Configuração de Pacotes
+> ### 3.6: Package Configuration
 
 > ### 3.6.1
-> Escolha a opção `No`, pois não precisamos de pacotes adicionais.
+> Choose the `No` option as additional packages are not required.
 <img width="835" src="Screenshots/img38.png">
 </br>
 
 > ### 3.6.2
-> Selecione seu país.
+> Select your country.
 <img width="835" src="Screenshots/img39.png">
 </br>
 
 > ### 3.6.3
-> Selecione o mirror `deb.debian.org`.
+> Select the mirror `deb.debian.org`.
 <img width="835" src="Screenshots/img40.png">
 </br>
 
 > ### 3.6.4
-> Pule a configuração do proxy deixando em branco e clique em `Continue`.
+> Skip the proxy configuration by leaving it blank and clicking `Continue`.
 <img width="835" src="Screenshots/img41.png">
 </br>
 
 > ### 3.6.5
-> Escolha a opção `No`.
+> Choose the `No` option.
 <img width="835" src="Screenshots/img42.png">
 </br>
 
-> ### 3.7: Instalação do GRUB Bootloader
+> ### 3.7: Installing GRUB Bootloader
 
 > ### 3.7.1
-> Desmarque todas as opções de pacote usando a barra de espaço e clique em `Continue`.
+> Deselect all package options using the spacebar and click `Continue`.
 <img width="835" src="Screenshots/img43.png">
 </br>
 
 > ### 3.7.2
-> Escolha `Yes` para instalar o GRUB no disco rígido.
+> Choose `Yes` to install GRUB on the hard disk.
 <img width="835" src="Screenshots/img44.png">
 
 > ### 3.7.3
-> Escolha o dispositivo `/dev/sda` para instalar o carregador de inicialização.
+> Select the `/dev/sda` device to install the bootloader.
 <img width="835" src="Screenshots/img45.png">
 
 ### 3.8: Finalização
-> Após a instalação do GRUB, selecione Continuar para finalizar o processo.
+> After installing GRUB, select `Continue`e to complete the process.
 <img width="835" src="Screenshots/img46.png">
 </br>
 
-## 4. Configuração do Sistema
+## 4. System Configuration
 
-### 4.1: Iniciar Sessão e Preparar Ambiente
-- Faça login com username e senha criptografada.
-- Torne-se root:
+### 4.1: Log In and Prepare the Environment
+- Log in with the username and password you created.
+- Switch to root:
   ```bash
   su
 
 </br>
 
-- Instale o sudo e reinicie o sistema:
+- Install `sudo` and reboot the system:
   ```bash
   apt install sudo
   sudo reboot
 
 </br>
 
-- Verifique a versão do sudo:
+- Check the `sudo` version:
   ```bash
   sudo -V
 
 </br>
 
-### 4.2: Configuração de Usuários e Grupos
-- Crie um novo usuário:
+### 4.2: User and Group Configuration
+- Create a new user:
   ```bash
   sudo adduser <username>
 
 </br>
 
-- Crie um grupo user42:
+- Create the `user42` group:
   ```bash
   sudo groupadd user42
 
 </br>
 
-- Adicione o usuário aos grupos user42 e sudo:
+- Add the user to the `user42` and `sudo` groups:
   ```bash
   sudo adduser <username> user42
   sudo adduser <username> sudo
 
 </br>
 
-- Verifique os grupos:
+- Verify the groups:
   ```bash
   getent group
 
 </br>
 
-### 4.3: Instalação do Vim
-- Instale o Vim:
+### 4.3: Installing Vim
+- Install Vim:
   ```bash
   sudo apt install vim
 
 </br>
 
 > [!Warning]
-> Para editar ficheiros aconcelho a utilizar o `Vim`.
+> For editing files, I recommend using `Vim`.
 
 </br>
 
-### 4.4: Configuração do SSH
-- Atualize os pacotes:
+### 4.4: SSH Configuration
+- Update the packages:
   ```bash
   sudo apt update
 
 </br>
 
-- Instale o OpenSSH:
+- Install OpenSSH:
   ```bash
   sudo apt install openssh-server
 
 </br>
 
-- Configure o SSH:
-  - Edite no `/etc/ssh/sshd_config`:
+- Configure SSH:
+  - Edit `/etc/ssh/sshd_config`:
     ```bash
     Port 4242
     PermitRootLogin no
 
 </br>
 
-  - Edite no `/etc/ssh/ssh_config`:
+  - Edit `/etc/ssh/ssh_config`:
     ```bash
     Port 4242
 
 </br>
 
-  - Reinicie o serviço SSH:
+  - Restart the SSH service:
     ```bash
     sudo service ssh restart
 
 </br>
 
-- Configure o firewall para aceitar conexões na porta 4242:
+- Configure the firewall to allow connections on port 4242:
   ```bash
   sudo ufw enable
   sudo ufw allow 4242
@@ -348,14 +350,14 @@
 
 </br>
 
-### 4.5: Configuração de Políticas do Sudo
-- Crie o arquivo de configuração:
+### 4.5: Sudo Policy Configuration
+- Create the configuration file:
   ```bash
   sudo touch /etc/sudoers.d/sudo_config
 
 </br>
 
-- Adicione as configurações de segurança:
+- Add security configurations:
   ```bash
   Defaults passwd_tries=3
   Defaults badpass_message="Wrong password bruh, try again:"
@@ -373,8 +375,8 @@
 
 </br>
 
-### 4.6: Configuração de Políticas de Senhas
-- Edite no `/etc/login.defs`:
+### 4.6: Password Policy Configuration
+- Edit `/etc/login.defs` file:
   ```bash
   PASS_MAX_DAYS 30
   PASS_MIN_DAYS 2
@@ -382,39 +384,32 @@
 
 </br>
 
-- Atualize as políticas de usuários existentes:
+- Update the policies for existing users:
   ```bash
   sudo chage -m 2 -M 30 <username>
 
 </br>
 
-- Instale e configure libpam-pwquality:
-  ```bash
-  sudo apt install libpam-pwquality
-  sudo vim /etc/pam.d/common-password
-
-</br>
-
-- Adicione as opções:
+- Add the following options:
   ```bash
   minlen=10 ucredit=-1 dcredit=-1 lcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
 
 </br>
 
-### 4.7: Configuração de Crontab e Scripts
-- Configure o Crontab para executar a cada 10 minutos:
+### 4.7: Crontab and Script Configuration
+- Configure Crontab to run every 10 minutes:
   ```bash
   sudo crontab -u root -e
 
 </br>
 
-- Adicione:
+- Add:
   ```bash
   */10 * * * * sh /usr/local/bin/sleep.sh; sh /usr/local/bin/monitoring.sh
 
 </br>
 
-- Crie e configure os scripts:
+- Create and configure the scripts:
   - `sleep.sh`:
     ```bash
     touch /usr/local/bin/sleep.sh
@@ -422,7 +417,7 @@
 
 </br>
 
-  - Código:
+  - Code:
     ```bash
     #!/bin/bash
     sleep $(who -b | awk '{ split($4, time, ":"); print time[2]%10 }')m
@@ -436,7 +431,7 @@
 
 </br>
 
-  - Código:
+  - Code:
     ```bash
     #!/bin/bash
 
@@ -498,56 +493,56 @@
 
 </br>
 
-### 4.8: Teste a Conexão SSH
-- Altere na definições da Máquina Virtual para o adaptador Bridge:
+### 4.8: Test the SSH Connection
+- Change the Virtual Machine settings to Bridge adapter:
 <img width="835" src="Screenshots/img47.png">
 
-- Obter o IP da Máquina Virtual:
+- Get the IP of the Virtual Machine:
   ```bash
   hostname -I
 
 </br>
 
-- Fora da Máquina Virtual conecte-se via SSH:
+- Outside the Virtual Machine, connect via SSH:
   ```bash
-  ssh <username>@<IP_Maquina_Virtual> -p 4242
+  ssh <username>@<IP_Virtual_Machine> -p 4242
 
 </br>
 
-### 4.9: Rebbot à Máquina Virtual
-- Reinicie o sistema:
+### 4.9: Reboot the Virtual Machine
+- Reboot the system:
   ```bash
   sudo reboot
 
 </br>
 
 > [!Warning]
-> Agora é confirmar se a mensagem está a aparecer de 10 em 10 minutos.
+> Now confirm that the message appears every 10 minutes.
 
 </br>
 
-## 5. Obter Signature
+## 5. Obtain the Signature
 
-> Desligue a VM
-> </br>Localize o caminho onde a VM está armazenada
-> </br>Execute o seguinte comando para obter a assinatura
+> Turn off the VM.
+> </br>Locate the path where the VM is stored.
+> </br>Run the following command to obtain the signature:
 >   ```bash
->   sha1sum <nome-da-vm.vdi>
+>   sha1sum <vm-name.vdi>
 
 </br>
 
-> Após obter a chave, precisamos criar o arquivo signature.txt
+> After obtaining the key, create the `signature.txt` file:
 >   ```bash
->   echo <chave_da_assinatura> > signature.txt
+>   echo <signature_key> > signature.txt
 
-Copie a signature.txt para o seu repositório intra
+Copy the signature.txt to your internal repository.
 </br>
 <img src="Screenshots/signature.png">
 
 </br>
 
 > [!Warning]
-> **Clone** a VM ou faça uma **Snapshot** para evitar alterar a assinatura obtida. 
-> </br>Para testes ou treinamento, use sempre a VM **clonada** ou a **snapshot**.
+> **Clone** the VM or take a **Snapshot** to avoid changing the obtained signature. 
+> </br>For testing or training, always use the **cloned** VM or the **snapshot**.
 
 ---
