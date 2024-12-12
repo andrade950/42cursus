@@ -360,7 +360,7 @@
 - Add security configurations:
   ```bash
   Defaults passwd_tries=3
-  Defaults badpass_message="Wrong password bruh, try again:"
+  Defaults badpass_message="Wrong password, try again:"
   Defaults logfile="/var/log/sudo/sudo_config"
   Defaults log_input, log_output
   Defaults iolog_dir="/var/log/sudo"
