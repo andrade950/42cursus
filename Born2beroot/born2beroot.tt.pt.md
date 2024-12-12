@@ -256,14 +256,14 @@
 
 </br>
 
-- Instale o sudo e reinicie o sistema:
+- Instale o `sudo` e reinicie o sistema:
   ```bash
   apt install sudo
   sudo reboot
 
 </br>
 
-- Verifique a versão do sudo:
+- Verifique a versão do `sudo`:
   ```bash
   sudo -V
 
@@ -276,7 +276,7 @@
 
 </br>
 
-- Crie um grupo user42:
+- Crie um grupo `user42`:
   ```bash
   sudo groupadd user42
 
@@ -321,14 +321,14 @@
 </br>
 
 - Configure o SSH:
-  - Edite no `/etc/ssh/sshd_config`:
+  - Edite `/etc/ssh/sshd_config`:
     ```bash
     Port 4242
     PermitRootLogin no
 
 </br>
 
-  - Edite no `/etc/ssh/ssh_config`:
+  - Edite `/etc/ssh/ssh_config`:
     ```bash
     Port 4242
 
@@ -374,7 +374,7 @@
 </br>
 
 ### 4.6: Configuração de Políticas de Senhas
-- Edite no `/etc/login.defs`:
+- Edite `/etc/login.defs`:
   ```bash
   PASS_MAX_DAYS 30
   PASS_MIN_DAYS 2
@@ -385,13 +385,6 @@
 - Atualize as políticas de usuários existentes:
   ```bash
   sudo chage -m 2 -M 30 <username>
-
-</br>
-
-- Instale e configure libpam-pwquality:
-  ```bash
-  sudo apt install libpam-pwquality
-  sudo vim /etc/pam.d/common-password
 
 </br>
 
@@ -514,7 +507,7 @@
 
 </br>
 
-### 4.9: Rebbot à Máquina Virtual
+### 4.9: Reinicie a Máquina Virtual
 - Reinicie o sistema:
   ```bash
   sudo reboot
@@ -528,15 +521,15 @@
 
 ## 5. Obter Signature
 
-> Desligue a VM
-> </br>Localize o caminho onde a VM está armazenada
-> </br>Execute o seguinte comando para obter a assinatura
+> Desligue a VM.
+> </br>Localize o caminho onde a VM está armazenada.
+> </br>Execute o seguinte comando para obter a assinatura:
 >   ```bash
 >   sha1sum <nome-da-vm.vdi>
 
 </br>
 
-> Após obter a chave, precisamos criar o arquivo signature.txt
+> Após obter a chave, precisamos criar o arquivo `signature.txt`:
 >   ```bash
 >   echo <chave_da_assinatura> > signature.txt
 
