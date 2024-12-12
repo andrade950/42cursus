@@ -5,7 +5,7 @@
 
 ## 2. Configurar a Máquina Virtual
 > ### 2.1
-> Abrir o VirtualBox e clicar em `Nova`
+> Abrir o VirtualBox e clicar em `Nova`.
 <img width="835" src="Screenshots/img1.png">
 </br>
 
@@ -115,17 +115,17 @@
 </br>
 
 > ### 3.3.3
-> Defina uma senha para o root (administrador do sistema)
+> Defina uma senha para o root (administrador do sistema).
 <img width="835" src="Screenshots/img21.png">
 </br>
 
 > ### 3.3.4
-> Repita a senha novamente
+> Repita a senha novamente.
 <img width="835" src="Screenshots/img22.png">
 </br>
 
 > ### 3.3.5
-> Crie um usuário adicional com seu login para uso "diário" (não root)
+> Crie um usuário adicional com seu login para uso "diário" (não root).
 <img width="835" src="Screenshots/img23.png">
 </br>
 
@@ -136,7 +136,7 @@
 </br>
 
 > ### 3.3.7
-> Repita a senha novamente
+> Repita a senha novamente.
 <img width="835" src="Screenshots/img26.png">
 </br>
 
@@ -242,7 +242,7 @@
 <img width="835" src="Screenshots/img45.png">
 
 ### 3.8: Finalização
-> Após a instalação do GRUB, selecione Continuar para finalizar o processo.
+> Após a instalação do GRUB, selecione `Continue` para finalizar o processo.
 <img width="835" src="Screenshots/img46.png">
 </br>
 
