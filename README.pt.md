@@ -253,4 +253,59 @@ Uma função que retorna linhas lidas de um descritor de arquivo, explorando con
 
 </details>
 
+### 4. **Born2beRoot**
+
+Um projeto de administração de sistemas que introduz conceitos de virtualização e configuração de servidores seguros.
+
+<details>
+  <summary>ℹ️ Detalhes do Projeto Born2beRoot</summary>
+
+- **Objetivo**: Criar e configurar uma máquina virtual segura utilizando o VirtualBox (ou UTM) com as seguintes características:
+  - Sistema operacional: última versão estável do Debian ou Rocky.
+  - Configuração mínima de serviços, sem interface gráfica.
+  - Criação de pelo menos duas partições criptografadas usando LVM.
+
+- **Configurações Obrigatórias**:
+
+  - **Firewall**: Configurar o UFW (ou firewalld no Rocky) para permitir apenas conexões na porta SSH 4242.
+  
+  - **SSH**:
+  
+    - Serviço rodando na porta 4242.
+    - Proibir conexões SSH como root.
+  - **Usuários e Grupos**:
+  
+    - Criar um usuário com seu login e atribuí-lo aos grupos `user42` e `sudo`.
+    - Implementar política de senha forte:
+      - Expiração a cada 30 dias.
+      - Mínimo de 10 caracteres com uma letra maiúscula, uma minúscula e um número.
+      - Aviso 7 dias antes da expiração.
+      - Proibir mais de 3 caracteres consecutivos idênticos.
+  
+  - **Sudo**:
+    - Limitar a 3 tentativas de autenticação.
+    - Exibir uma mensagem personalizada em caso de erro.
+    - Arquivar logs de todas as ações em `/var/log/sudo/`.
+    - Habilitar o modo TTY e restringir os caminhos usados pelo sudo.
+  
+  - **Hostname**: Deve ser definido como `<login>42` e ser alterado durante a avaliação.
+  
+  - **Script de Monitoramento**:
+    - Um script `monitoring.sh` que exibe a cada 10 minutos informações como:
+      - Arquitetura do sistema e versão do kernel.
+      - Número de processadores físicos e virtuais.
+      - Uso de RAM e disco.
+      - Taxa de utilização da CPU.
+      - Data do último reboot.
+      - Status do LVM.
+      - Número de conexões ativas e usuários logados.
+      - Endereço IPv4 e MAC.
+      - Número de comandos executados com sudo.
+
+- **Normas**:
+  - É necessário configurar e explicar o funcionamento do script `monitoring.sh` durante a defesa.
+
+</details>
+
+
 ---
