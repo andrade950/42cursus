@@ -77,7 +77,7 @@
 </br>
 
 > ### 3.2.2
-> Escolha o seu país, se não estiver listado, use a opção "Other" para encontrar o seu continente.
+> Escolha o seu país, se não estiver listado, use a opção `Other` para encontrar o seu continente.
 <img width="835" src="Screenshots/img14.png">
 </br>
 
