@@ -251,4 +251,58 @@ A function that returns lines read from a file descriptor, exploring concepts li
 
 </details> 
 
+### 4. **Born2beRoot**
+
+A system administration project introducing concepts of virtualization and secure server configuration.
+
+<details>
+  <summary>ℹ️ Details of the Born2beRoot Project</summary>
+
+- **Objective**: Create and configure a secure virtual machine using VirtualBox (or UTM) with the following characteristics:
+  - Operating system: the latest stable version of Debian or Rocky.
+  - Minimal service configuration, without a graphical interface.
+  - Creation of at least two encrypted partitions using LVM.
+
+- **Mandatory Configurations**
+
+  - **Firewall**: Configure UFW (or firewalld for Rocky) to allow only connections on SSH port 4242.
+  
+  - **SSH**:
+    - Service running on port 4242.
+    - Prohibit SSH connections as root.
+  
+  - **Users and Groups**:
+    - Create a user with your login and assign them to the `user42` and `sudo` groups.
+    - Implement a strong password policy:
+      - Expiration every 30 days.
+      - Minimum of 10 characters, including an uppercase letter, a lowercase letter, and a number.
+      - Warning 7 days before expiration.
+      - Prohibit more than 3 identical consecutive characters.
+  
+  - **Sudo**:
+    - Limit authentication attempts to 3.
+    - Display a custom message in case of error.
+    - Archive logs of all actions in `/var/log/sudo/`.
+    - Enable TTY mode and restrict paths used by sudo.
+  
+  - **Hostname**: Must be set as `<login>42` and be modified during the evaluation.
+  
+  - **Monitoring Script**:
+    - A `monitoring.sh` script that displays every 10 minutes information such as:
+      - System architecture and kernel version.
+      - Number of physical and virtual processors.
+      - RAM and disk usage.
+      - CPU utilization rate.
+      - Last reboot date.
+      - LVM status.
+      - Number of active connections and logged users.
+      - IPv4 and MAC addresses.
+      - Number of commands executed with sudo.
+
+- **Rules**:
+  - It is necessary to configure and explain the `monitoring.sh` script during the defense.
+
+</details>
+
+
 ---
