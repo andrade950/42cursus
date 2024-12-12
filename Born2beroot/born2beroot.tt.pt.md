@@ -39,7 +39,7 @@
 </br>
 
 > ### 2.7
-> `Armazenamento` > `Controlador IDE` > `vazio`.
+> `Storage` > `IDE Controller` > `Empty`.
 <img width="835" src="Screenshots/img7.png">
 </br>
 
