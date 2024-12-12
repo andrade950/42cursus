@@ -34,7 +34,7 @@
 </br>
 
 > ### 2.6
-> Agora, vamos adicionar o arquivo ISO clicando em `definiçoes`.
+> Agora, vamos adicionar o arquivo ISO clicando em `Settings`.
 <img width="835" src="Screenshots/img6.png">
 </br>
 
