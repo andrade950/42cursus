@@ -498,13 +498,16 @@
 </br>
 
 ### 4.8: Teste a Conexão SSH
-- Alterne para o adaptador Bridge e obtenha o IP:
+- Altere na definições da Máquina Virtual para o adaptador Bridge:
+<img width="835" src="Screenshots/img47.png">
+
+- Obter o IP da Máquina Virtual:
   ```bash
   hostname -I
 
 </br>
 
-- Conecte-se via SSH:
+- Fora da Máquina Virtual conecte-se via SSH:
   ```bash
   ssh <username>@<IP_Maquina_Virtual> -p 4242
 
@@ -536,10 +539,14 @@
 >   ```bash
 >   echo <chave_da_assinatura> > signature.txt
 
-Copie a signature.txt para o seu repositório intra 
+Copie a signature.txt para o seu repositório intra
+</br>
+<img src="Screenshots/signature.png">
 
 </br>
 
 > [!Warning]
 > **Clone** a VM ou faça uma **Snapshot** para evitar alterar a assinatura obtida. 
 > </br>Para testes ou treinamento, use sempre a VM **clonada** ou a **snapshot**.
+
+---
