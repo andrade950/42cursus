@@ -6,7 +6,7 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
 
 ## Projects Rank 00
 
-### 1. Libft
+### 1. [Libft](Libft)
    A personal library that reproduces standard C library functions, enabling their use in other cursus projects.
 
    <details>
@@ -124,7 +124,7 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
 
 ## Projects Rank 01
 
-### 2. ft_printf  
+### 2. [ft_printf](ft_printf) 
 A custom implementation of the versatile `printf` function, enhancing the foundational C programming skills by handling variadic functions and formatted output.
 
 <details>
@@ -183,7 +183,7 @@ A custom implementation of the versatile `printf` function, enhancing the founda
 
 </details>
 
-### 3. **get_next_line**  
+### 3. [get_next_line](get_next_line)
 A function that returns lines read from a file descriptor, exploring concepts like static variables in C.
 
 <details>
@@ -251,7 +251,7 @@ A function that returns lines read from a file descriptor, exploring concepts li
 
 </details> 
 
-### 4. **Born2beRoot**
+### 4. [Born2beroot](Born2beroot)
 
 A system administration project introducing concepts of virtualization and secure server configuration.
 
