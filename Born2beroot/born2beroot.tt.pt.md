@@ -54,7 +54,7 @@
 </br>
 
 > ### 2.10
-> Agora, basta clicar em `Iniciar` para começar a instalação do ISO na máquina virtual.
+> Agora, basta clicar em `Start` para começar a instalação do ISO na máquina virtual.
 <img width="835" src="Screenshots/img11.png">
 </br>
 
