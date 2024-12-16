@@ -1,6 +1,6 @@
 # Born2beroot Evaluation Guide
 
-This document outlines the evaluation criteria for the **Born Project**. Please follow the steps carefully to ensure a thorough and accurate evaluation.
+This document outlines the evaluation criteria for the **Born2beroot Project**. Please follow the steps carefully to ensure a thorough and accurate evaluation.
 
 ---
 
