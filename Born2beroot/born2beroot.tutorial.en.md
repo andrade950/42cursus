@@ -1,6 +1,6 @@
 # Born2beroot Tutorial in English
 
-[Ver Tutorial em Português](born2beroot.tt.pt.md)
+[Ver Tutorial em Português](born2beroot.tutorial.pt.md)
 
 ## 1. Download the `ISO` file
 [![Debian](https://img.shields.io/badge/Debian_iso-Download-D70A53?style=for-the-badge&logo=debian&logoColor=white)](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.8.0-amd64-netinst.iso)
