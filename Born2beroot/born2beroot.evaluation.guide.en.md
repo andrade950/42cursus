@@ -1,5 +1,7 @@
 # Born2beroot Evaluation Guide
 
+[Ler Guia em Português](born2beroot.evaluation.guide.pt.md)
+
 This document outlines the evaluation criteria for the **Born2beroot Project**. Please follow the steps carefully to ensure a thorough and accurate evaluation.
 
 ---
