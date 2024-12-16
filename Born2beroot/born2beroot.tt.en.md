@@ -6,13 +6,11 @@
 [![Debian](https://img.shields.io/badge/Debian_iso-Download-D70A53?style=for-the-badge&logo=debian&logoColor=white)](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.8.0-amd64-netinst.iso)
 
 ## 2. Set Up the Virtual Machine
-> ### 2.1
-> Open VirtualBox and click `New`.
+> ### 2.1. Open VirtualBox and click `New`.
 <img width="835" src="Screenshots/img1.png">
 </br>
 
-> ### 2.2
-> Choose the name and folder.
+> ### 2.2. Choose the name and folder.
 
 > [!Warning]
 > Make sure to store it in the `sgoinfre` folder located on the 42 server.
@@ -20,43 +18,35 @@
 <img width="835" src="Screenshots/img2.png">
 </br>
 
-> ### 2.3
-> Select the total `RAM` memory reserved for the machine (1024).
+> ### 2.3. Select the total `RAM` memory reserved for the machine (1024).
 <img width="835" src="Screenshots/img3.png">
 </br>
 
-> ### 2.4
-> Define the size of the hard disk `(8Gb)`.
+> ### 2.4. Define the size of the hard disk `(8Gb)`.
 <img width="835" src="Screenshots/img4.png">
 </br>
 
-> ### 2.5
-> Then click `Finish`.
+> ### 2.5. Then click `Finish`.
 <img width="835" src="Screenshots/img5.png">
 </br>
 
-> ### 2.6
-> Now, let's add the ISO file by clicking on `Settings`.
+> ### 2.6. Now, let's add the ISO file by clicking on `Settings`.
 <img width="835" src="Screenshots/img6.png">
 </br>
 
-> ### 2.7
-> `Storage` > `IDE Controller` > `Empty`.
+> ### 2.7. `Storage` > `IDE Controller` > `Empty`.
 <img width="835" src="Screenshots/img7.png">
 </br>
 
-> ### 2.8
-> Click the 💿 icon under Optical Drive and select `Choose Disk File`.
+> ### 2.8. Click the 💿 icon under Optical Drive and select `Choose Disk File`.
 <img width="835" src="Screenshots/img9.png">
 </br>
 
-> ### 2.9
-> Select the downloaded `ISO` file and click `OK`.
+> ### 2.9. Select the downloaded `ISO` file and click `OK`.
 <img width="835" src="Screenshots/img10.png">
 </br>
 
-> ### 2.10
-> Now, just click `Start` to begin the ISO installation on the virtual machine.
+> ### 2.10. Now, just click `Start` to begin the ISO installation on the virtual machine.
 <img width="835" src="Screenshots/img11.png">
 </br>
 
@@ -71,186 +61,154 @@
 <img width="835" src="Screenshots/img12.png">
 </br>
 
-> ### 3.2: Language and Location Selection
+> ### 3.2. Language and Location Selection
 
-> ### 3.2.1
-> Choose the installation language. The default is English.
+> ### 3.2.1 .Choose the installation language. The default is English.
 <img width="835" src="Screenshots/img13.png">
 </br>
 
-> ### 3.2.2
-> Choose your country. If not listed, use the `Other` option to find your continent.
+> ### 3.2.2. Choose your country. If not listed, use the `Other` option to find your continent.
 <img width="835" src="Screenshots/img14.png">
 </br>
 
-> ### 3.2.3
-> Select your continent.
+> ### 3.2.3. Select your continent.
 <img width="835" src="Screenshots/img15.png">
 </br>
 
-> ### 3.2.4
-> Now select your country.
+> ### 3.2.4. Now select your country.
 <img width="835" src="Screenshots/img16.png">
 </br>
 
-> ### 3.2.5
-> Choose the United States.
+> ### 3.2.5. Choose the United States.
 <img width="835" src="Screenshots/img17.png">
 </br>
 
-> ### 3.2.6
-> Selecione o layout correto do teclado.
+> ### 3.2.6. Selecione o layout correto do teclado.
 > </br>If you're unsure about your layout, check [Keyboard Layouts](https://keyshorts.com/blogs/blog/44712961-how-to-identify-laptop-keyboard-localization).
 <img width="835" src="Screenshots/img18.png">
 </br>
 
-> ### 3.3: Configuring Hostname and User
+> ### 3.3. Configuring Hostname and User
 
-> ### 3.3.1
-> Set the machine's hostname to your login followed by 42, as per the project guidelines.
+> ### 3.3.1. Set the machine's hostname to your login followed by 42, as per the project guidelines.
 <img width="835" src="Screenshots/img19.png">
 </br>
 
-> ### 3.3.2
-> Leave this field blank, as the project does not mention the need for a domain.
+> ### 3.3.2. Leave this field blank, as the project does not mention the need for a domain.
 <img width="835" src="Screenshots/img20.png">
 </br>
 
-> ### 3.3.3
-> Set a password for the root (system administrator).
+> ### 3.3.3. Set a password for the root (system administrator).
 <img width="835" src="Screenshots/img21.png">
 </br>
 
-> ### 3.3.4
-> Repeat the password.
+> ### 3.3.4. Repeat the password.
 <img width="835" src="Screenshots/img22.png">
 </br>
 
-> ### 3.3.5
-> Create an additional user with your login for "daily" (non-root) use.
+> ### 3.3.5. Create an additional user with your login for "daily" (non-root) use.
 <img width="835" src="Screenshots/img23.png">
 </br>
 
-> ### 3.3.6
-> Enter the password for the new user.
+> ### 3.3.6. Enter the password for the new user.
 > </br>I recommend using the same password for simplicity.
 <img width="835" src="Screenshots/img25.png">
 </br>
 
-> ### 3.3.7
-> Repeat the password.
+> ### 3.3.7. Repeat the password.
 <img width="835" src="Screenshots/img26.png">
 </br>
 
-> ### 3.4: Time Zone Configuration
+> ### 3.4. Time Zone Configuration
 
-> ### 3.4.1
-> Choose the region corresponding to your country.
+> ### 3.4.1. Choose the region corresponding to your country.
 <img width="835" src="Screenshots/img27.png">
 </br>
 
-> ### 3.4.2
-> Select “Guided - use entire disk and set up encrypted LVM” to configure partitions with encrypted LVM.
+> ### 3.4.2. Select “Guided - use entire disk and set up encrypted LVM” to configure partitions with encrypted LVM.
 <img width="835" src="Screenshots/img28.png">
 </br>
 
-> ### 3.4.3
-> Choose the disk you want to partition (usually the only one available).
+> ### 3.4.3. Choose the disk you want to partition (usually the only one available).
 <img width="835" src="Screenshots/img29.png">
 </br>
 
-> ### 3.4.4
-> Choose `Separate /home partition`.
+> ### 3.4.4. Choose `Separate /home partition`.
 <img width="835" src="Screenshots/img30.png">
 </br>
 
-> ### 3.4.5
-> Select `Yes` to confirm saving the changes.
+> ### 3.4.5. Select `Yes` to confirm saving the changes.
 <img width="835" src="Screenshots/img31.png">
 </br>
 
-> ### 3.4.6
-> Click `Cancel` to avoid deleting data on the disk.
+> ### 3.4.6. Click `Cancel` to avoid deleting data on the disk.
 <img width="835" src="Screenshots/img32.png">
 </br>
 
-> ### 3.4.7
-> Set a password for disk encryption and save it for future use.
+> ### 3.4.7. Set a password for disk encryption and save it for future use.
 <img width="835" src="Screenshots/img33.png">
 </br>
 
-> ### 3.4.8
-> Repeat the encryption password.
+> ### 3.4.8. Repeat the encryption password.
 <img width="835" src="Screenshots/img34.png">
 </br>
 
-> ### 3.4.9
-> Enter `max` or the maximum value shown to allocate all space.
+> ### 3.4.9. Enter `max` or the maximum value shown to allocate all space.
 <img width="835" src="Screenshots/img35.png">
 </br>
 
-> ### 3.5: Partitioning Finalization
+> ### 3.5. Partitioning Finalization
 
-> ### 3.5.1
-> Select `Finish partitioning and write changes to disk`.
+> ### 3.5.1. Select `Finish partitioning and write changes to disk`.
 <img width="835" src="Screenshots/img36.png">
 </br>
 
-> ### 3.5.2
-> Choose `Yes` to continue and confirm you do not want to make further disk changes.
+> ### 3.5.2. Choose `Yes` to continue and confirm you do not want to make further disk changes.
 <img width="835" src="Screenshots/img37.png">
 </br>
 
-> ### 3.6: Package Configuration
+> ### 3.6. Package Configuration
 
-> ### 3.6.1
-> Choose the `No` option as additional packages are not required.
+> ### 3.6.1. Choose the `No` option as additional packages are not required.
 <img width="835" src="Screenshots/img38.png">
 </br>
 
-> ### 3.6.2
-> Select your country.
+> ### 3.6.2. Select your country.
 <img width="835" src="Screenshots/img39.png">
 </br>
 
-> ### 3.6.3
-> Select the mirror `deb.debian.org`.
+> ### 3.6.3. Select the mirror `deb.debian.org`.
 <img width="835" src="Screenshots/img40.png">
 </br>
 
-> ### 3.6.4
-> Skip the proxy configuration by leaving it blank and clicking `Continue`.
+> ### 3.6.4. Skip the proxy configuration by leaving it blank and clicking `Continue`.
 <img width="835" src="Screenshots/img41.png">
 </br>
 
-> ### 3.6.5
-> Choose the `No` option.
+> ### 3.6.5. Choose the `No` option.
 <img width="835" src="Screenshots/img42.png">
 </br>
 
-> ### 3.7: Installing GRUB Bootloader
+> ### 3.7. Installing GRUB Bootloader
 
-> ### 3.7.1
-> Deselect all package options using the spacebar and click `Continue`.
+> ### 3.7.1. Deselect all package options using the spacebar and click `Continue`.
 <img width="835" src="Screenshots/img43.png">
 </br>
 
-> ### 3.7.2
-> Choose `Yes` to install GRUB on the hard disk.
+> ### 3.7.2. Choose `Yes` to install GRUB on the hard disk.
 <img width="835" src="Screenshots/img44.png">
 
-> ### 3.7.3
-> Select the `/dev/sda` device to install the bootloader.
+> ### 3.7.3. Select the `/dev/sda` device to install the bootloader.
 <img width="835" src="Screenshots/img45.png">
 
-### 3.8: Finalização
+### 3.8. Finalização
 > After installing GRUB, select `Continue`e to complete the process.
 <img width="835" src="Screenshots/img46.png">
 </br>
 
 ## 4. System Configuration
 
-### 4.1: Log In and Prepare the Environment
+### 4.1. Log In and Prepare the Environment
 - Log in with the username and password you created.
 - Switch to root:
   ```bash
@@ -271,7 +229,7 @@
 
 </br>
 
-### 4.2: User and Group Configuration
+### 4.2. User and Group Configuration
 - Create a new user:
   ```bash
   sudo adduser <username>
@@ -297,7 +255,7 @@
 
 </br>
 
-### 4.3: Installing Vim
+### 4.3. Installing Vim
 - Install Vim:
   ```bash
   sudo apt install vim
@@ -309,7 +267,7 @@
 
 </br>
 
-### 4.4: SSH Configuration
+### 4.4. SSH Configuration
 - Update the packages:
   ```bash
   sudo apt update
@@ -350,7 +308,7 @@
 
 </br>
 
-### 4.5: Sudo Policy Configuration
+### 4.5. Sudo Policy Configuration
 - Create the configuration file:
   ```bash
   sudo touch /etc/sudoers.d/sudo_config
@@ -375,7 +333,7 @@
 
 </br>
 
-### 4.6: Password Policy Configuration
+### 4.6. Password Policy Configuration
 - Edit `/etc/login.defs` file:
   ```bash
   PASS_MAX_DAYS 30
@@ -396,7 +354,7 @@
 
 </br>
 
-### 4.7: Crontab and Script Configuration
+### 4.7. Crontab and Script Configuration
 - Configure Crontab to run every 10 minutes:
   ```bash
   sudo crontab -u root -e
@@ -493,7 +451,7 @@
 
 </br>
 
-### 4.8: Test the SSH Connection
+### 4.8. Test the SSH Connection
 - Change the Virtual Machine settings to Bridge adapter:
 <img width="835" src="Screenshots/img47.png">
 
@@ -509,7 +467,7 @@
 
 </br>
 
-### 4.9: Reboot the Virtual Machine
+### 4.9. Reboot the Virtual Machine
 - Reboot the system:
   ```bash
   sudo reboot
