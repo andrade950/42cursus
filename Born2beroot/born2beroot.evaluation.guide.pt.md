@@ -1,5 +1,7 @@
 # Guia de Avaliação do Born2beroot
 
+[Read Guide in English](born2beroot.evaluation.guide.en.md)
+
 Este documento descreve os critérios de avaliação para o **Projeto Born2beroot**. Siga os passos com atenção para garantir uma avaliação precisa.
 
 ---
