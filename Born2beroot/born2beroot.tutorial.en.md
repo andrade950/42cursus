@@ -63,142 +63,142 @@
 
 > ### 3.2. Language and Location Selection
 
-> ### 3.2.1 .Choose the installation language. The default is English.
+> #### 3.2.1 .Choose the installation language. The default is English.
 <img width="835" src="Screenshots/img13.png">
 </br>
 
-> ### 3.2.2. Choose your country. If not listed, use the `Other` option to find your continent.
+> #### 3.2.2. Choose your country. If not listed, use the `Other` option to find your continent.
 <img width="835" src="Screenshots/img14.png">
 </br>
 
-> ### 3.2.3. Select your continent.
+> #### 3.2.3. Select your continent.
 <img width="835" src="Screenshots/img15.png">
 </br>
 
-> ### 3.2.4. Now select your country.
+> #### 3.2.4. Now select your country.
 <img width="835" src="Screenshots/img16.png">
 </br>
 
-> ### 3.2.5. Choose the United States.
+> #### 3.2.5. Choose the United States.
 <img width="835" src="Screenshots/img17.png">
 </br>
 
-> ### 3.2.6. Selecione o layout correto do teclado.
+> #### 3.2.6. Selecione o layout correto do teclado.
 > </br>If you're unsure about your layout, check [Keyboard Layouts](https://keyshorts.com/blogs/blog/44712961-how-to-identify-laptop-keyboard-localization).
 <img width="835" src="Screenshots/img18.png">
 </br>
 
 > ### 3.3. Configuring Hostname and User
 
-> ### 3.3.1. Set the machine's hostname to your login followed by 42, as per the project guidelines.
+> #### 3.3.1. Set the machine's hostname to your login followed by 42, as per the project guidelines.
 <img width="835" src="Screenshots/img19.png">
 </br>
 
-> ### 3.3.2. Leave this field blank, as the project does not mention the need for a domain.
+> #### 3.3.2. Leave this field blank, as the project does not mention the need for a domain.
 <img width="835" src="Screenshots/img20.png">
 </br>
 
-> ### 3.3.3. Set a password for the root (system administrator).
+> #### 3.3.3. Set a password for the root (system administrator).
 <img width="835" src="Screenshots/img21.png">
 </br>
 
-> ### 3.3.4. Repeat the password.
+> #### 3.3.4. Repeat the password.
 <img width="835" src="Screenshots/img22.png">
 </br>
 
-> ### 3.3.5. Create an additional user with your login for "daily" (non-root) use.
+> #### 3.3.5. Create an additional user with your login for "daily" (non-root) use.
 <img width="835" src="Screenshots/img23.png">
 </br>
 
-> ### 3.3.6. Enter the password for the new user.
+> #### 3.3.6. Enter the password for the new user.
 > </br>I recommend using the same password for simplicity.
 <img width="835" src="Screenshots/img25.png">
 </br>
 
-> ### 3.3.7. Repeat the password.
+> #### 3.3.7. Repeat the password.
 <img width="835" src="Screenshots/img26.png">
 </br>
 
 > ### 3.4. Time Zone Configuration
 
-> ### 3.4.1. Choose the region corresponding to your country.
+> #### 3.4.1. Choose the region corresponding to your country.
 <img width="835" src="Screenshots/img27.png">
 </br>
 
-> ### 3.4.2. Select “Guided - use entire disk and set up encrypted LVM” to configure partitions with encrypted LVM.
+> #### 3.4.2. Select “Guided - use entire disk and set up encrypted LVM” to configure partitions with encrypted LVM.
 <img width="835" src="Screenshots/img28.png">
 </br>
 
-> ### 3.4.3. Choose the disk you want to partition (usually the only one available).
+> #### 3.4.3. Choose the disk you want to partition (usually the only one available).
 <img width="835" src="Screenshots/img29.png">
 </br>
 
-> ### 3.4.4. Choose `Separate /home partition`.
+> #### 3.4.4. Choose `Separate /home partition`.
 <img width="835" src="Screenshots/img30.png">
 </br>
 
-> ### 3.4.5. Select `Yes` to confirm saving the changes.
+> #### 3.4.5. Select `Yes` to confirm saving the changes.
 <img width="835" src="Screenshots/img31.png">
 </br>
 
-> ### 3.4.6. Click `Cancel` to avoid deleting data on the disk.
+> #### 3.4.6. Click `Cancel` to avoid deleting data on the disk.
 <img width="835" src="Screenshots/img32.png">
 </br>
 
-> ### 3.4.7. Set a password for disk encryption and save it for future use.
+> #### 3.4.7. Set a password for disk encryption and save it for future use.
 <img width="835" src="Screenshots/img33.png">
 </br>
 
-> ### 3.4.8. Repeat the encryption password.
+> #### 3.4.8. Repeat the encryption password.
 <img width="835" src="Screenshots/img34.png">
 </br>
 
-> ### 3.4.9. Enter `max` or the maximum value shown to allocate all space.
+> #### 3.4.9. Enter `max` or the maximum value shown to allocate all space.
 <img width="835" src="Screenshots/img35.png">
 </br>
 
 > ### 3.5. Partitioning Finalization
 
-> ### 3.5.1. Select `Finish partitioning and write changes to disk`.
+> #### 3.5.1. Select `Finish partitioning and write changes to disk`.
 <img width="835" src="Screenshots/img36.png">
 </br>
 
-> ### 3.5.2. Choose `Yes` to continue and confirm you do not want to make further disk changes.
+> #### 3.5.2. Choose `Yes` to continue and confirm you do not want to make further disk changes.
 <img width="835" src="Screenshots/img37.png">
 </br>
 
 > ### 3.6. Package Configuration
 
-> ### 3.6.1. Choose the `No` option as additional packages are not required.
+> #### 3.6.1. Choose the `No` option as additional packages are not required.
 <img width="835" src="Screenshots/img38.png">
 </br>
 
-> ### 3.6.2. Select your country.
+> #### 3.6.2. Select your country.
 <img width="835" src="Screenshots/img39.png">
 </br>
 
-> ### 3.6.3. Select the mirror `deb.debian.org`.
+> #### 3.6.3. Select the mirror `deb.debian.org`.
 <img width="835" src="Screenshots/img40.png">
 </br>
 
-> ### 3.6.4. Skip the proxy configuration by leaving it blank and clicking `Continue`.
+> #### 3.6.4. Skip the proxy configuration by leaving it blank and clicking `Continue`.
 <img width="835" src="Screenshots/img41.png">
 </br>
 
-> ### 3.6.5. Choose the `No` option.
+> #### 3.6.5. Choose the `No` option.
 <img width="835" src="Screenshots/img42.png">
 </br>
 
 > ### 3.7. Installing GRUB Bootloader
 
-> ### 3.7.1. Deselect all package options using the spacebar and click `Continue`.
+> #### 3.7.1. Deselect all package options using the spacebar and click `Continue`.
 <img width="835" src="Screenshots/img43.png">
 </br>
 
-> ### 3.7.2. Choose `Yes` to install GRUB on the hard disk.
+> #### 3.7.2. Choose `Yes` to install GRUB on the hard disk.
 <img width="835" src="Screenshots/img44.png">
 
-> ### 3.7.3. Select the `/dev/sda` device to install the bootloader.
+> #### 3.7.3. Select the `/dev/sda` device to install the bootloader.
 <img width="835" src="Screenshots/img45.png">
 
 ### 3.8. Finalização
