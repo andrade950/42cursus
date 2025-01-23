@@ -29,12 +29,3 @@ char	*ft_strdup(const char *s)
 	str[i] = '\0';
 	return (str);
 }
-
-/*int	main(void)
-{
-	char	src[] = "Como é que é";
-	char	dest[20];
-	ft_memcpy(dest, src, strlen(src) + 1);
-	printf("string copiada usando a funcao criada: %s\n", dest);
-	return (0);
-}*/
