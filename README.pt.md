@@ -309,3 +309,81 @@ Um projeto de administração de sistemas que introduz conceitos de virtualizaç
 
 
 ---
+
+## Projetos Rank 02
+
+### 1. [push_swap](push_swap)  
+Um projeto otimizado de algoritmo de ordenação utilizando duas pilhas e um conjunto limitado de operações, aprimorando o pensamento algorítmico e a eficiência na programação em C.
+
+<details>
+  <summary>ℹ️ Detalhes do Projeto push_swap</summary>
+
+- **Objetivo**: Desenvolver um programa, `push_swap`, que ordene uma pilha de inteiros utilizando o menor número possível de operações predefinidas. O objetivo é implementar um algoritmo de ordenação eficiente, respeitando as restrições do projeto.
+
+- **Funcionalidades Implementadas**:  
+
+  | Operação  | Descrição |
+  |------------|--------------------------------------------------------------------------------|
+  | `sa`       | Troca os dois primeiros elementos da pilha `a`                                 |
+  | `sb`       | Troca os dois primeiros elementos da pilha `b`                                 |
+  | `ss`       | Executa `sa` e `sb` simultaneamente                                          |
+  | `pa`       | Move o elemento do topo da pilha `b` para `a`                                |
+  | `pb`       | Move o elemento do topo da pilha `a` para `b`                                |
+  | `ra`       | Roda `a` (desloca todos os elementos para cima, o primeiro torna-se o último) |
+  | `rb`       | Roda `b` (desloca todos os elementos para cima, o primeiro torna-se o último) |
+  | `rr`       | Executa `ra` e `rb` simultaneamente                                         |
+  | `rra`      | Roda `a` ao contrário (desloca todos os elementos para baixo, o último torna-se o primeiro) |
+  | `rrb`      | Roda `b` ao contrário (desloca todos os elementos para baixo, o último torna-se o primeiro) |
+  | `rrr`      | Executa `rra` e `rrb` simultaneamente                                      |
+
+- **Destaques**:
+  - Implementa algoritmos de ordenação eficientes (ex.: Quick Sort, Radix Sort ou uma variação otimizada).
+  - Utiliza duas pilhas (`a` e `b`) e um conjunto limitado de operações para alcançar a ordenação desejada.
+  - Garante um número mínimo de operações para cumprir os requisitos do benchmark.
+  - Gere memória dinamicamente e evita vazamentos.
+  - Tratamento de erros para entradas inválidas (valores não inteiros, duplicados, overflow).
+
+- **Normas do Projeto**:
+  - O código segue estritamente a norminette da 42.
+  - Não são permitidas variáveis globais.
+  - Implementa um `Makefile` robusto para compilação.
+
+- **Makefile**:
+  - Automatiza o processo de compilação do `push_swap`, garantindo consistência.
+  - **Regras**:
+    - `make` ou `make all`: Compila `push_swap`.
+    - `make clean`: Remove ficheiros objeto (`.o`).
+    - `make fclean`: Remove ficheiros compilados e executáveis.
+    - `make re`: Recompila o projeto do zero.
+    - `make bonus`: Compila o programa adicional `checker`.
+
+- **Exemplo de Utilização**:
+  ```bash
+  ./push_swap 2 1 3 6 5 8
+  sa
+  pb
+  pb
+  pb
+  sa
+  pa
+  pa
+  pa
+  ```
+
+- **Requisitos de Benchmark**:
+  - Ordenar **100 números aleatórios** em **≤ 700 operações**.
+  - Ordenar **500 números aleatórios** em **≤ 5500 operações**.
+
+- **Bónus** (Programa Checker):
+  - Um programa separado `checker` verifica se uma sequência de operações ordena corretamente uma entrada.
+
+- **Desafios e Aprendizagem**:
+  - Dominar algoritmos de ordenação e otimizá-los para um número mínimo de operações.
+  - Implementar e gerir um sistema de duas pilhas.
+  - Gerir validação de entrada e tratamento de erros em C.
+  - Compreender complexidade temporal e eficiência de algoritmos.
+
+</details>
+
+
+---
