@@ -312,7 +312,7 @@ Um projeto de administração de sistemas que introduz conceitos de virtualizaç
 
 ## Projetos Rank 02
 
-### 1. [push_swap](push_swap)  
+### 1. [push_swap](https://github.com/andrade950/42push_swap)
 Um projeto otimizado de algoritmo de ordenação utilizando duas pilhas e um conjunto limitado de operações, aprimorando o pensamento algorítmico e a eficiência na programação em C.
 
 <details>
