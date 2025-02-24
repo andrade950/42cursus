@@ -319,19 +319,19 @@ An optimized sorting algorithm project using two stacks and a limited set of ope
 
 - **Implemented Features**:  
 
-  | Operation  | Description |
-  |------------|--------------------------------------------------------------------------------|
-  | `sa`       | Swaps the first two elements of stack `a`                                     |
-  | `sb`       | Swaps the first two elements of stack `b`                                     |
-  | `ss`       | Performs `sa` and `sb` simultaneously                                        |
-  | `pa`       | Moves the top element from `b` to `a`                                        |
-  | `pb`       | Moves the top element from `a` to `b`                                        |
-  | `ra`       | Rotates `a` (shifts all elements up by one, first element becomes last)      |
-  | `rb`       | Rotates `b` (shifts all elements up by one, first element becomes last)      |
-  | `rr`       | Performs `ra` and `rb` simultaneously                                       |
-  | `rra`      | Reverse rotates `a` (shifts all elements down by one, last element becomes first) |
-  | `rrb`      | Reverse rotates `b` (shifts all elements down by one, last element becomes first) |
-  | `rrr`      | Performs `rra` and `rrb` simultaneously                                    |
+  | Operação   | Descrição                                                                                   |
+  |------------|---------------------------------------------------------------------------------------------|
+  | `sa`       | Troca os dois primeiros elementos da pilha `a`                                              |
+  | `sb`       | Troca os dois primeiros elementos da pilha `b`                                              |
+  | `ss`       | Executa `sa` e `sb` simultaneamente                                                         |
+  | `pa`       | Move o elemento do topo da pilha `b` para `a`                                               |
+  | `pb`       | Move o elemento do topo da pilha `a` para `b`                                               |
+  | `ra`       | Roda `a` (desloca todos os elementos para cima, o primeiro torna-se o último)               |
+  | `rb`       | Roda `b` (desloca todos os elementos para cima, o primeiro torna-se o último)               |
+  | `rr`       | Executa `ra` e `rb` simultaneamente                                                         |
+  | `rra`      | Roda `a` ao contrário (desloca todos os elementos para baixo, o último torna-se o primeiro) |
+  | `rrb`      | Roda `b` ao contrário (desloca todos os elementos para baixo, o último torna-se o primeiro) |
+  | `rrr`      | Executa `rra` e `rrb` simultaneamente                                                       |
 
 - **Highlights**:
   - Implements efficient sorting algorithms (e.g., Quick Sort, Radix Sort, or an optimized variation).
