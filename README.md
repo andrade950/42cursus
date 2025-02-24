@@ -309,7 +309,7 @@ A system administration project introducing concepts of virtualization and secur
 
 ## Projects Rank 02
 
-### 1. [push_swap](push_swap)  
+### 1. [push_swap](https://github.com/andrade950/42push_swap)
 An optimized sorting algorithm project using two stacks and a limited set of operations, enhancing algorithmic thinking and efficiency in C programming.
 
 <details>
