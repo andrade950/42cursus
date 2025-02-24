@@ -306,3 +306,78 @@ A system administration project introducing concepts of virtualization and secur
 
 
 ---
+
+## Projects Rank 02
+
+### 1. [push_swap](push_swap)  
+An optimized sorting algorithm project using two stacks and a limited set of operations, enhancing algorithmic thinking and efficiency in C programming.
+
+<details>
+  <summary>ℹ️ push_swap Project Details</summary>
+
+- **Objective**: Develop a program, `push_swap`, that sorts a stack of integers using the smallest number of predefined operations. The goal is to implement an efficient sorting algorithm while adhering to the project constraints.
+
+- **Implemented Features**:  
+
+  | Operation  | Description |
+  |------------|--------------------------------------------------------------------------------|
+  | `sa`       | Swaps the first two elements of stack `a`                                     |
+  | `sb`       | Swaps the first two elements of stack `b`                                     |
+  | `ss`       | Performs `sa` and `sb` simultaneously                                        |
+  | `pa`       | Moves the top element from `b` to `a`                                        |
+  | `pb`       | Moves the top element from `a` to `b`                                        |
+  | `ra`       | Rotates `a` (shifts all elements up by one, first element becomes last)      |
+  | `rb`       | Rotates `b` (shifts all elements up by one, first element becomes last)      |
+  | `rr`       | Performs `ra` and `rb` simultaneously                                       |
+  | `rra`      | Reverse rotates `a` (shifts all elements down by one, last element becomes first) |
+  | `rrb`      | Reverse rotates `b` (shifts all elements down by one, last element becomes first) |
+  | `rrr`      | Performs `rra` and `rrb` simultaneously                                    |
+
+- **Highlights**:
+  - Implements efficient sorting algorithms (e.g., Quick Sort, Radix Sort, or an optimized variation).
+  - Utilizes two stacks (`a` and `b`) and a limited set of operations to achieve the desired sorting.
+  - Ensures minimal operation count to meet benchmark requirements.
+  - Manages memory dynamically and prevents leaks.
+  - Error handling for invalid inputs (non-integer values, duplicates, overflow).
+
+- **Project Norms**:
+  - Code adheres strictly to the 42 norminette.
+  - No global variables are used.
+  - Implements a robust `Makefile` for compilation.
+
+- **Makefile**:
+  - Automates the build process for `push_swap`, ensuring consistency.
+  - **Rules**:
+    - `make` or `make all`: Compiles `push_swap`.
+    - `make clean`: Removes object files (`.o`).
+    - `make fclean`: Removes compiled files and executable.
+    - `make re`: Recompiles the project from scratch.
+    - `make bonus`: Compiles additional `checker` program.
+
+- **Example Usage**:
+  ```bash
+  ./push_swap 2 1 3 6 5 8
+  sa
+  pb
+  pb
+  pb
+  sa
+  pa
+  pa
+  pa
+  ```
+
+- **Benchmark Requirements**:
+  - Sorting **100 random numbers** in **≤ 700 operations**.
+  - Sorting **500 random numbers** in **≤ 5500 operations**.
+
+- **Bonus** (Checker Program):
+  - A separate `checker` program verifies if a sequence of operations correctly sorts a given input.
+
+- **Challenges and Learning**:
+  - Mastering sorting algorithms and optimizing them for minimal operations.
+  - Implementing and managing a dual-stack system.
+  - Handling input validation and error management in C.
+  - Understanding time complexity and algorithm efficiency.
+
+</details>
