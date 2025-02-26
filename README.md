@@ -6,11 +6,11 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
 
 ## Projects Rank 00
 
-### 1. [Libft](Libft)
+### 1. 📚 [Libft](Libft)
    A personal library that reproduces standard C library functions, enabling their use in other cursus projects.
 
    <details>
-     <summary> 📚 Libft Project Details</summary>
+     <summary> 🛈 Libft Project Details</summary>
 
    - **Objective**: Create a personal library, `libft.a`, containing various general-use functions, such as string manipulation, conversion, and memory handling.
    - **Implemented Functions**:
@@ -124,11 +124,11 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
 
 ## Projects Rank 01
 
-### 2. [ft_printf](ft_printf) 
+### 1. 🖨️ [ft_printf](ft_printf) 
 A custom implementation of the versatile `printf` function, enhancing the foundational C programming skills by handling variadic functions and formatted output.
 
 <details>
-  <summary> 🖨️ ft_printf Project Details</summary>
+  <summary> 🛈 ft_printf Project Details</summary>
 
 - **Objective**: Develop a library, `libftprintf.a`, containing a custom version of the `printf` function, `ft_printf()`, to mimic the behavior of the standard C library function `printf`.
 
@@ -183,11 +183,11 @@ A custom implementation of the versatile `printf` function, enhancing the founda
 
 </details>
 
-### 3. [get_next_line](get_next_line)
+### 2. 📄 [get_next_line](get_next_line)
 A function that returns lines read from a file descriptor, exploring concepts like static variables in C.
 
 <details>
-  <summary> 📄 get_next_line Project Details</summary>
+  <summary> 🛈 get_next_line Project Details</summary>
 
 - **Objective**: Develop the `get_next_line()` function that returns a line read from a file descriptor, including the newline character (`\n`) if present.
 
@@ -251,12 +251,12 @@ A function that returns lines read from a file descriptor, exploring concepts li
 
 </details> 
 
-### 4. [Born2beroot](Born2beroot)
+### 3. 💿 [Born2beroot](Born2beroot)
 
 A system administration project introducing concepts of virtualization and secure server configuration.
 
 <details>
-  <summary> 💿 Details of the Born2beRoot Project</summary>
+  <summary> 🛈 Details of the Born2beRoot Project</summary>
 
 - **Objective**: Create and configure a secure virtual machine using VirtualBox (or UTM) with the following characteristics:
   - Operating system: the latest stable version of Debian or Rocky.
@@ -309,11 +309,11 @@ A system administration project introducing concepts of virtualization and secur
 
 ## Projects Rank 02
 
-### 1. [push_swap](https://github.com/andrade950/42push_swap)
+### 1. 🧮 [push_swap](https://github.com/andrade950/42push_swap)
 An optimized sorting algorithm project using two stacks and a limited set of operations, enhancing algorithmic thinking and efficiency in C programming.
 
 <details>
-  <summary> 🧮 push_swap Project Details</summary>
+  <summary> 🛈 push_swap Project Details</summary>
 
 - **Objective**: Develop a program, `push_swap`, that sorts a stack of integers using the smallest number of predefined operations. The goal is to implement an efficient sorting algorithm while adhering to the project constraints.
 
