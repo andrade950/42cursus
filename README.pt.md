@@ -6,11 +6,11 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui
 
 ## Projetos Rank 00
 
-### 1. [Libft](Libft)
+### 1. 📚 [Libft](Libft)
    Uma biblioteca pessoal que reproduz funções da biblioteca padrão do C, permitindo utilizá-las em outros projetos do cursus.
 
    <details>
-     <summary>ℹ️ Detalhes do Projeto Libft</summary>
+     <summary> 🛈 Detalhes do Projeto Libft</summary>
 
    - **Objetivo**: Criar uma biblioteca pessoal, `libft.a`, contendo várias funções de uso geral, como manipulação de strings, conversão e manipulação de memória.
    - **Funções Implementadas**:
@@ -126,11 +126,11 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos no **42 Cursus**! Aqui
 
 ## Projetos Rank 01
 
-### 2. [ft_printf](ft_printf)
+### 1. 🖨️ [ft_printf](ft_printf)
 Uma implementação personalizada da versátil função `printf`, aprimorando as habilidades de programação em C ao lidar com funções variádicas e saída formatada.
 
 <details>
-  <summary>ℹ️ Detalhes do Projeto ft_printf</summary>
+  <summary> 🛈 Detalhes do Projeto ft_printf</summary>
 
 - **Objetivo**: Desenvolver uma biblioteca, `libftprintf.a`, contendo uma versão personalizada da função `printf`, chamada `ft_printf()`, para imitar o comportamento da função padrão da biblioteca C `printf`.
 
@@ -184,11 +184,11 @@ Uma implementação personalizada da versátil função `printf`, aprimorando as
 
 </details>
 
-### 3. [get_next_line](get_next_line) 
+### 2. 📄 [get_next_line](get_next_line) 
 Uma função que retorna linhas lidas de um descritor de arquivo, explorando conceitos como variáveis estáticas em C.
 
 <details>
-  <summary>ℹ️ Detalhes do Projeto get_next_line</summary>
+  <summary> 🛈 Detalhes do Projeto get_next_line</summary>
 
 - **Objetivo**: Desenvolver a função `get_next_line()` que retorna uma linha lida de um descritor de arquivo, incluindo o caractere de nova linha (`\n`) se presente.
 
@@ -253,12 +253,12 @@ Uma função que retorna linhas lidas de um descritor de arquivo, explorando con
 
 </details>
 
-### 4. [Born2beroot](Born2beroot) 
+### 3. 💿 [Born2beroot](Born2beroot) 
 
 Um projeto de administração de sistemas que introduz conceitos de virtualização e configuração de servidores seguros.
 
 <details>
-  <summary>ℹ️ Detalhes do Projeto Born2beRoot</summary>
+  <summary> 🛈 Detalhes do Projeto Born2beRoot</summary>
 
 - **Objetivo**: Criar e configurar uma máquina virtual segura utilizando o VirtualBox (ou UTM) com as seguintes características:
   - Sistema operacional: última versão estável do Debian ou Rocky.
@@ -312,11 +312,11 @@ Um projeto de administração de sistemas que introduz conceitos de virtualizaç
 
 ## Projetos Rank 02
 
-### 1. [push_swap](https://github.com/andrade950/42push_swap)
+### 1. 🧮 [push_swap](https://github.com/andrade950/42push_swap)
 Um projeto otimizado de algoritmo de ordenação utilizando duas pilhas e um conjunto limitado de operações, aprimorando o pensamento algorítmico e a eficiência na programação em C.
 
 <details>
-  <summary>ℹ️ Detalhes do Projeto push_swap</summary>
+  <summary> 🛈 Detalhes do Projeto push_swap</summary>
 
 - **Objetivo**: Desenvolver um programa, `push_swap`, que ordene uma pilha de inteiros utilizando o menor número possível de operações predefinidas. O objetivo é implementar um algoritmo de ordenação eficiente, respeitando as restrições do projeto.
 
