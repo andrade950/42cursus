@@ -374,9 +374,6 @@ Um projeto otimizado de algoritmo de ordenação utilizando duas pilhas e um con
   - Ordenar **100 números aleatórios** em **≤ 700 operações**.
   - Ordenar **500 números aleatórios** em **≤ 5500 operações**.
 
-- **Bónus** (Programa Checker):
-  - Um programa separado `checker` verifica se uma sequência de operações ordena corretamente uma entrada.
-
 - **Desafios e Aprendizagem**:
   - Dominar algoritmos de ordenação e otimizá-los para um número mínimo de operações.
   - Implementar e gerir um sistema de duas pilhas.
