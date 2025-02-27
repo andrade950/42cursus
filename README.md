@@ -371,9 +371,6 @@ An optimized sorting algorithm project using two stacks and a limited set of ope
   - Sorting **100 random numbers** in **≤ 700 operations**.
   - Sorting **500 random numbers** in **≤ 5500 operations**.
 
-- **Bonus** (Checker Program):
-  - A separate `checker` program verifies if a sequence of operations correctly sorts a given input.
-
 - **Challenges and Learning**:
   - Mastering sorting algorithms and optimizing them for minimal operations.
   - Implementing and managing a dual-stack system.
