@@ -379,5 +379,69 @@ An optimized sorting algorithm project using two stacks and a limited set of ope
 
 </details>
 
----
+### 2. 📡 [minitalk](https://github.com/andrade950/42minitalk)
+An implementation of interprocess communication using UNIX signals.
 
+<details>
+  <summary> 🛈 Minitalk Project Details</summary>
+
+- **Objective**: Create a communication program between a client and a server using UNIX signals.
+
+- **Functionality**:
+  - The **server** must be started first and display its PID upon initialization.
+  - The **client** receives the server's PID and the string to be sent as parameters.
+  - The client sends the string to the server using only the `SIGUSR1` and `SIGUSR2` signals.
+  - The server receives the string and quickly prints it to the standard output.
+  - The server must be able to handle multiple clients without needing to restart.
+
+- **Allowed Functions**:  
+  | Function       | Description |
+  |--------------|-------------|
+  | `write`      | Writes to the standard output |
+  | `ft_printf`  | Prints formatted messages |
+  | `signal`     | Defines a signal handler |
+  | `sigemptyset` | Initializes an empty signal set |
+  | `sigaddset`  | Adds a signal to the set |
+  | `sigaction`  | Defines actions for signals |
+  | `kill`       | Sends signals to processes |
+  | `getpid`     | Retrieves the current process PID |
+  | `malloc`     | Allocates memory dynamically |
+  | `free`       | Frees allocated memory |
+  | `pause`      | Pauses the process until a signal is received |
+  | `sleep`      | Suspends execution for a specified time |
+  | `usleep`     | Suspends execution for a specified time in microseconds |
+  | `exit`       | Terminates the program |
+
+- **Project Guidelines**:
+  - The code strictly follows the 42 **norminette** standard.
+  - No memory leaks are allowed.
+  - The client and server must be compiled separately and named `client` and `server`.
+  - A `Makefile` must be provided to compile the files without relinking.
+
+- **Makefile**:
+  - Automates the compilation process for `minitalk`.
+  - **Rules**:
+    - `make` or `make all`: Compiles `client` and `server`.
+    - `make clean`: Removes object files (`.o`).
+    - `make fclean`: Removes compiled files and executables.
+    - `make re`: Recompiles the project from scratch.
+
+- **Usage Example**:
+  ```bash
+  # Start the server
+  ./server
+  # The server will display its PID, for example: 12345
+
+  # Run the client to send a message to the server
+  ./client 12345 "Hello, Minitalk!"
+  ```
+
+- **Challenges and Learning Outcomes**:
+  - Understanding UNIX signals and IPC (Inter-Process Communication).
+  - Implementing a robust and reliable communication protocol.
+  - Ensuring data integrity during transmission without losses.
+  - Efficiently handling processes and signals in C.
+
+</details>
+
+---
