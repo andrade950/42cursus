@@ -382,5 +382,69 @@ Um projeto otimizado de algoritmo de ordenação utilizando duas pilhas e um con
 
 </details>
 
+### 2. 📡 [minitalk](https://github.com/andrade950/minitalk)
+Uma implementação de comunicação entre processos utilizando sinais UNIX.
+
+<details>
+  <summary> 🛈 Detalhes do Projeto minitalk</summary>
+
+- **Objetivo**: Criar um programa de comunicação entre um cliente e um servidor utilizando sinais UNIX.
+
+- **Funcionamento**:
+  - O **servidor** deve ser iniciado primeiro e exibir seu PID ao iniciar.
+  - O **cliente** recebe como parâmetro o PID do servidor e a string a ser enviada.
+  - O cliente envia a string ao servidor utilizando apenas os sinais `SIGUSR1` e `SIGUSR2`.
+  - O servidor recebe a string e a imprime rapidamente na saída padrão.
+  - O servidor deve conseguir lidar com múltiplos clientes sem a necessidade de reinicialização.
+
+- **Funções permitidas**:  
+  | Função       | Descrição |
+  |-------------|-----------|
+  | `write`     | Escreve na saída padrão |
+  | `ft_printf` | Imprime mensagens formatadas |
+  | `signal`    | Define um manipulador de sinal |
+  | `sigemptyset` | Inicializa um conjunto de sinais vazio |
+  | `sigaddset` | Adiciona um sinal ao conjunto |
+  | `sigaction` | Define ações para sinais |
+  | `kill` | Envia sinais para processos |
+  | `getpid` | Obtém o PID do processo atual |
+  | `malloc` | Aloca memória dinamicamente |
+  | `free` | Libera memória alocada |
+  | `pause` | Pausa o processo até receber um sinal |
+  | `sleep` | Suspende a execução por um tempo determinado |
+  | `usleep` | Suspende a execução por um tempo em microssegundos |
+  | `exit` | Termina o programa |
+
+- **Normas do Projeto**:
+  - O código segue estritamente a norminette da 42.
+  - Nenhum vazamento de memória será tolerado.
+  - O cliente e o servidor devem ser compilados separadamente e nomeados `client` e `server`.
+  - Um `Makefile` deve ser fornecido para compilar os arquivos sem relink.
+
+- **Makefile**:
+  - Automatiza o processo de compilação do `minitalk`.
+  - **Regras**:
+    - `make` ou `make all`: Compila `client` e `server`.
+    - `make clean`: Remove ficheiros objeto (`.o`).
+    - `make fclean`: Remove ficheiros compilados e executáveis.
+    - `make re`: Recompila o projeto do zero.
+
+- **Exemplo de Utilização**:
+  ```bash
+  # Iniciar o servidor
+  ./server
+  # O servidor exibirá seu PID, por exemplo: 12345
+  
+  # Executar o cliente para enviar uma mensagem ao servidor
+  ./client 12345 "Hello, Minitalk!"
+  ```
+
+- **Desafios e Aprendizagem**:
+  - Compreender sinais UNIX e IPC (Inter-Process Communication).
+  - Implementar um protocolo de comunicação robusto e confiável.
+  - Garantir a integridade dos dados transmitidos sem perdas.
+  - Manipular processos e sinais com eficiência em C.
+
+</details>
 
 ---
