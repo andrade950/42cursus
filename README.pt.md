@@ -382,7 +382,7 @@ Um projeto otimizado de algoritmo de ordenação utilizando duas pilhas e um con
 
 </details>
 
-### 2. 📡 [minitalk](https://github.com/andrade950/minitalk)
+### 2. 📡 [minitalk](https://github.com/andrade950/42minitalk)
 Uma implementação de comunicação entre processos utilizando sinais UNIX.
 
 <details>
