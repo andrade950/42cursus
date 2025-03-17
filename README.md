@@ -444,4 +444,84 @@ An implementation of interprocess communication using UNIX signals.
 
 </details>
 
+### 3. 🕹️ [so_long](https://github.com/andrade950/42so_long)
+A small 2D game using the MiniLibX library.
+
+<details>
+  <summary> 🛈 So_Long Project Details</summary>
+
+- **Objective**: Create a basic 2D game where a player collects items and reaches an exit while navigating a map.
+
+- **Functionality**:
+  - The game loads a map from a `.ber` file and renders it using MiniLibX.
+  - The player must collect all collectibles before reaching the exit.
+  - The player moves using **W, A, S, D** or arrow keys.
+  - The game keeps track of the movement count and displays it in the terminal.
+  - The map must follow specific formatting rules (walls, collectibles, exit, and player position).
+  - The game window must close cleanly when pressing **ESC** or clicking the close button.
+
+- **Allowed Functions**:  
+  | Function       | Description |
+  |--------------|-------------|
+  | `open`, `close`, `read`, `write` | File handling and input/output |
+  | `malloc`, `free` | Memory allocation |
+  | `perror`, `strerror` | Error handling |
+  | `exit` | Program termination |
+  | Math library functions (`-lm`) | Mathematical calculations |
+  | MiniLibX functions | Graphics rendering and event handling |
+  | `ft_printf` (or custom equivalent) | Formatted output |
+
+- **Project Guidelines**:
+  - The code must follow the **42 Norm**.
+  - No memory leaks are allowed.
+  - A `Makefile` must be provided with the standard rules: `all`, `clean`, `fclean`, `re`, `bonus`.
+  - The game must take as input a valid `.ber` map file.
+
+- **Makefile**:
+  - Automates the compilation process for `so_long`.
+  - **Rules**:
+    - `make` or `make all`: Compiles the project.
+    - `make clean`: Removes object files (`.o`).
+    - `make fclean`: Removes compiled files and executables.
+    - `make re`: Recompiles the project from scratch.
+
+- **Usage Example**:
+  ```bash
+  # Compile the game
+  make
+  
+  # Run the game with a map file
+  ./so_long maps/level1.ber
+  ```
+
+- **Map Format**:
+  - The map must be composed of the following characters:
+    - `0` → Empty space
+    - `1` → Wall
+    - `C` → Collectible
+    - `E` → Exit
+    - `P` → Player's starting position
+  - Example of a valid `.ber` map:
+    ```
+    111111
+    1P0C01
+    100001
+    1C0E01
+    111111
+    ```
+  - The map must be **rectangular**, enclosed by walls, and contain **at least one exit, one collectible, and one player position**.
+
+- **Bonus Features (if implemented)**:
+  - Enemies that move and cause the player to lose when touched.
+  - Animated sprites for better visuals.
+  - Displaying the movement count directly in the game window.
+
+- **Challenges and Learning Outcomes**:
+  - Working with MiniLibX for graphics rendering.
+  - Handling user inputs and event-driven programming.
+  - Implementing a simple game loop and collision detection.
+  - Managing memory efficiently and ensuring error-free execution.
+
+</details>
+
 ---
