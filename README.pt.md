@@ -447,4 +447,85 @@ Uma implementação de comunicação entre processos utilizando sinais UNIX.
 
 </details>
 
+### 3. 🕹️ [so_long](https://github.com/your-repo/so_long)
+Um pequeno jogo 2D utilizando a biblioteca MiniLibX.
+
+<details>
+  <summary> 🛈 Detalhes do Projeto So_Long</summary>
+
+- **Objetivo**: Criar um jogo 2D básico onde o jogador recolhe itens e alcança a saída enquanto navega por um mapa.
+
+- **Funcionalidade**:
+  - O jogo carrega um mapa a partir de um ficheiro `.ber` e renderiza-o usando a MiniLibX.
+  - O jogador deve recolher todos os colecionáveis antes de alcançar a saída.
+  - O jogador movimenta-se usando as teclas **W, A, S, D** ou as setas do teclado.
+  - O jogo acompanha o número de movimentos e exibe-os no terminal.
+  - O mapa deve seguir regras de formatação específicas (paredes, colecionáveis, saída e posição inicial do jogador).
+  - A janela do jogo deve fechar corretamente ao pressionar **ESC** ou ao clicar no botão de fechar.
+
+- **Funções Permitidas**:  
+  | Função       | Descrição |
+  |--------------|-------------|
+  | `open`, `close`, `read`, `write` | Manipulação de ficheiros e entrada/saída |
+  | `malloc`, `free` | Alocação de memória |
+  | `perror`, `strerror` | Tratamento de erros |
+  | `exit` | Terminação do programa |
+  | Funções da biblioteca matemática (`-lm`) | Cálculos matemáticos |
+  | Funções da MiniLibX | Renderização gráfica e gestão de eventos |
+  | `ft_printf` (ou equivalente criado por ti) | Saída formatada |
+
+- **Regras do Projeto**:
+  - O código deve seguir a **Norma 42**.
+  - Não são permitidos vazamentos de memória.
+  - Deve ser fornecido um `Makefile` com as regras padrão: `all`, `clean`, `fclean`, `re`, `bonus`.
+  - O jogo deve aceitar como entrada um ficheiro `.ber` válido.
+
+- **Makefile**:
+  - Automatiza o processo de compilação do `so_long`.
+  - **Regras**:
+    - `make` ou `make all`: Compila o projeto.
+    - `make clean`: Remove ficheiros objeto (`.o`).
+    - `make fclean`: Remove ficheiros compilados e executáveis.
+    - `make re`: Recompila o projeto do zero.
+
+- **Exemplo de Utilização**:
+  ```bash
+  # Compilar o jogo
+  make
+  
+  # Executar o jogo com um ficheiro de mapa
+  ./so_long maps/level1.ber
+  ```
+
+- **Formato do Mapa**:
+  - O mapa deve ser composto pelos seguintes caracteres:
+    - `0` → Espaço vazio
+    - `1` → Parede
+    - `C` → Colecionável
+    - `E` → Saída
+    - `P` → Posição inicial do jogador
+  - Exemplo de um mapa `.ber` válido:
+    ```
+    111111
+    1P0C01
+    100001
+    1C0E01
+    111111
+    ```
+  - O mapa deve ser **retangular**, rodeado por paredes e conter **pelo menos uma saída, um colecionável e uma posição inicial do jogador**.
+
+- **Funcionalidades Bónus (se implementadas)**:
+  - Inimigos que se movem e fazem o jogador perder ao ser tocado.
+  - Animação de sprites para melhorar os visuais.
+  - Exibir o número de movimentos diretamente na janela do jogo.
+
+- **Desafios e Aprendizagens**:
+  - Trabalhar com a MiniLibX para renderização gráfica.
+  - Gerir entradas do utilizador e programação baseada em eventos.
+  - Implementar um loop de jogo simples e deteção de colisões.
+  - Gerir memória eficientemente e garantir uma execução sem erros.
+
+</details>
+
 ---
+
