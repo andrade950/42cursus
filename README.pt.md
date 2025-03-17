@@ -447,7 +447,7 @@ Uma implementação de comunicação entre processos utilizando sinais UNIX.
 
 </details>
 
-### 3. 🕹️ [so_long](https://github.com/your-repo/so_long)
+### 3. 🕹️ [so_long](https://github.com/andrade950/42so_long)
 Um pequeno jogo 2D utilizando a biblioteca MiniLibX.
 
 <details>
