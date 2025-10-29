@@ -529,3 +529,78 @@ Um pequeno jogo 2D utilizando a biblioteca MiniLibX.
 
 ---
 
+## Projetos Rank 03
+
+### 1. 🐚 [Minishell](https://github.com/andrade950/42minishell)
+Uma shell simplificada inspirada no **Bash**, desenvolvida para aprofundar o entendimento sobre processos, sinais e descritores de arquivo em sistemas Unix.
+
+<details>
+  <summary> 🛈 Detalhes do Projeto Minishell</summary>
+
+- **Objetivo**:  
+  Desenvolver uma shell minimalista de linha de comando que imita o comportamento do **Bash**. O projeto explora a gestão de processos, redirecionamentos, pipes, sinais e variáveis de ambiente.
+
+- **Nome do Programa**: `minishell`
+
+- **Funções Autorizadas**:  
+  Inclui, mas não se limita a:
+  - `readline`, `add_history`, `printf`, `malloc`, `free`, `write`
+  - `fork`, `execve`, `wait`, `waitpid`, `pipe`, `dup`, `dup2`
+  - `signal`, `sigaction`, `kill`, `getcwd`, `chdir`, `stat`
+  - `open`, `close`, `read`, `access`, `unlink`, `opendir`, `readdir`
+  - `tcsetattr`, `tcgetattr`, `tgetent`, `tputs`, `getenv`
+  - e outras — cobrindo as principais chamadas de sistema Unix usadas em desenvolvimento de shells.
+
+- **Descrição**:  
+  A shell:
+  - Exibe um **prompt** e aguarda por novos comandos.  
+  - Mantém um **histórico** funcional de comandos.  
+  - Procura executáveis com base na variável **PATH** ou em caminhos absolutos/relativos.  
+  - Expande **variáveis de ambiente** (`$VAR`, `$?`).  
+  - Implementa **pipes (`|`)**, conectando a saída de um comando à entrada de outro.  
+  - Suporta **redirecionamentos**:
+    - `<` redireciona a entrada  
+    - `>` redireciona a saída  
+    - `>>` redireciona a saída em modo de anexação  
+    - `<<` (heredoc) lê até encontrar um delimitador especificado
+  - Gerencia **sinais** como o Bash:
+    - `Ctrl-C` → Mostra um novo prompt em uma nova linha  
+    - `Ctrl-D` → Encerra a shell  
+    - `Ctrl-\` → Não faz nada  
+  - Trata **aspas** corretamente:
+    - `'` (aspas simples) impedem a interpretação de metacaracteres  
+    - `"` (aspas duplas) permitem expansão de `$`, mas não de outros caracteres especiais  
+
+- **Comandos Internos (Built-ins)**:
+  | Comando | Descrição |
+  |----------|-------------|
+  | `echo [-n]` | Exibe texto no terminal |
+  | `cd [caminho]` | Altera o diretório atual |
+  | `pwd` | Mostra o diretório de trabalho atual |
+  | `export` | Define ou atualiza variáveis de ambiente |
+  | `unset` | Remove variáveis de ambiente |
+  | `env` | Mostra todas as variáveis de ambiente |
+  | `exit` | Encerra a shell |
+
+- **Política de Variáveis Globais**:
+  - Apenas **uma variável global** é permitida, usada **exclusivamente** para armazenar o valor de um sinal recebido.  
+  - É proibido armazenar qualquer outra estrutura ou dado globalmente.
+
+- **Makefile**:
+  - Deve conter as regras padrão: `NAME`, `all`, `clean`, `fclean`, `re`.  
+  - Compilado com as flags `-Wall -Wextra -Werror`.  
+  - Utiliza a biblioteca `libft` para funções auxiliares.
+
+- **Exemplo de Uso**:
+  ```bash
+  $ ./minishell
+  minishell$ echo "Olá, mundo!"
+  Olá, mundo!
+  minishell$ ls -l | grep minishell > saida.txt
+  minishell$ cat saida.txt
+
+- **Desafios e Aprendizados:**:
+  - Compreensão profunda de **criação de processos, tratamento de sinais** e **gerenciamento de descritores de arquivo**.
+  - Parsing e tokenização de comandos com tratamento correto de sintaxe.
+  - Implementação de **tratamento robusto de erros** e **gerenciamento de memória**.
+  - Reprodução de comportamentos semelhantes ao Bash, dentro das restrições da norma da 42.
