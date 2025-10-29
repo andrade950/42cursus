@@ -598,9 +598,9 @@ A simplified shell inspired by **Bash**, developed to deepen the understanding o
   minishell$ cat output.txt
 
 - **Challenges and Learning Outcomes**:
-   -Deep understanding of **process creation, signal handling**, and **file descriptor management**.
-   -Parsing and tokenizing command input with correct syntax handling.
-   -Implementing robust **error handling** and **memory management**.
-   -Emulating Bash-like behavior within strict C and 42 norm constraints.
+  - Deep understanding of **process creation, signal handling**, and **file descriptor management**.
+  - Parsing and tokenizing command input with correct syntax handling.
+  - Implementing robust **error handling** and **memory management**.
+  - Emulating Bash-like behavior within strict C and 42 norm constraints.
 
 </details> 
