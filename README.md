@@ -525,3 +525,82 @@ A small 2D game using the MiniLibX library.
 </details>
 
 ---
+
+
+## Projects Rank 03
+
+### 1. 🐚 [Minishell](https://github.com/andrade950/42minishell)
+A simplified shell inspired by **Bash**, developed to deepen the understanding of processes, signals, and file descriptors in Unix systems.
+
+<details>
+  <summary> 🛈 Minishell Project Details</summary>
+
+- **Objective**:  
+  Develop a minimalist command-line shell that mimics **Bash** behavior. The project explores process management, redirections, pipes, signals, and environment variables.
+
+- **Program Name**: `minishell`
+
+- **Authorized Functions**:  
+  Includes but is not limited to:
+  - `readline`, `add_history`, `printf`, `malloc`, `free`, `write`
+  - `fork`, `execve`, `wait`, `waitpid`, `pipe`, `dup`, `dup2`
+  - `signal`, `sigaction`, `kill`, `getcwd`, `chdir`, `stat`
+  - `open`, `close`, `read`, `access`, `unlink`, `opendir`, `readdir`
+  - `tcsetattr`, `tcgetattr`, `tgetent`, `tputs`, `getenv`
+  - and more — covering the main Unix system calls used in shell development.
+
+- **Description**:  
+  The shell:
+  - Displays a **prompt** and waits for user input.  
+  - Maintains a **working history** of commands.  
+  - Searches for executables using **PATH** or absolute/relative paths.  
+  - Handles **environment variable expansion** (`$VAR`, `$?`).  
+  - Implements **pipes (`|`)** to connect command outputs and inputs.  
+  - Supports **redirections**:
+    - `<` input redirection  
+    - `>` output redirection  
+    - `>>` append output redirection  
+    - `<<` heredoc (reads until a specified delimiter)
+  - Manages **signals** like Bash:
+    - `Ctrl-C` → Displays a new prompt  
+    - `Ctrl-D` → Exits the shell  
+    - `Ctrl-\` → Ignored  
+  - Handles **quotes** properly:
+    - `'` (single quotes) prevent interpretation  
+    - `"` (double quotes) allow `$` expansions but not other special characters  
+
+- **Built-in Commands**:
+  | Command | Description |
+  |----------|-------------|
+  | `echo [-n]` | Prints text to standard output |
+  | `cd [path]` | Changes the current directory |
+  | `pwd` | Prints the current working directory |
+  | `export` | Adds or updates environment variables |
+  | `unset` | Removes environment variables |
+  | `env` | Displays all environment variables |
+  | `exit` | Exits the shell |
+
+- **Global Variable Policy**:
+  - Only one global variable is allowed, used **exclusively** to store signal values.
+  - No global structures or additional data may be stored globally.
+
+- **Makefile**:
+  - Must include standard rules: `NAME`, `all`, `clean`, `fclean`, `re`.
+  - Compiles with `-Wall -Wextra -Werror`.
+  - Uses the `libft` library for utility functions.
+
+- **Example Usage**:
+  ```bash
+  $ ./minishell
+  minishell$ echo "Hello, world!"
+  Hello, world!
+  minishell$ ls -l | grep minishell > output.txt
+  minishell$ cat output.txt
+
+- **Challenges and Learning Outcomes**:
+   -Deep understanding of **process creation, signal handling**, and **file descriptor management**.
+   -Parsing and tokenizing command input with correct syntax handling.
+   -Implementing robust **error handling** and **memory management**.
+   -Emulating Bash-like behavior within strict C and 42 norm constraints.
+
+</details> 
