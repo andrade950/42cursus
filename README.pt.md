@@ -1,4 +1,4 @@
-# 42 Cursus Projects Repository
+# Repositório de Projetos do Cursus 42
 
 [Read in English](README.md)
 
