@@ -604,3 +604,110 @@ Uma shell simplificada inspirada no **Bash**, desenvolvida para aprofundar o ent
   - Parsing e tokenização de comandos com tratamento correto de sintaxe.
   - Implementação de **tratamento robusto de erros** e **gerenciamento de memória**.
   - Reprodução de comportamentos semelhantes ao Bash, dentro das restrições da norma da 42.
+
+</details>
+
+### 2. 🍝 [Philosophers](https://github.com/andrade950/42philosophers)
+
+Uma exploração de multithreading e sincronização em C, simulando o famoso problema do Jantar dos Filósofos usando threads e mutexes.
+
+<details> <summary> 🛈 Detalhes do Projeto Philosophers</summary>
+
+- **Objective**:  
+  Implementar uma simulação onde vários filósofos alternam entre comer, dormir e pensar — garantindo que nenhum morre de fome, e gerindo o acesso a recursos partilhados (garfos) usando **threads** e **mutexes**.
+
+- **Nome do Programa**: `philo`
+
+- **Funções Permitidas**:  
+  `memset`, `printf`, `malloc`, `free`, `write`,  
+  `usleep`, `gettimeofday`,  
+  `pthread_create`, `pthread_detach`, `pthread_join`,  
+  `pthread_mutex_init`, `pthread_mutex_destroy`, `pthread_mutex_lock`, `pthread_mutex_unlock`
+
+- **Argumentos**:  
+  ```bash
+  ./philo número_de_filósofos tempo_para_morrer tempo_para_comer tempo_para_dormir [número_de_vezes_que_cada_filósofo_deve_comer]
+  número_de_filósofos → Número de filósofos (e garfos).
+  ```
+  
+   - **tempo_para_morrer (ms)** → Tempo que um filósofo pode viver sem comer.
+   - **tempo_para_comer (ms)** → Duração que um filósofo passa a comer (segurando ambos os garfos).
+   - **tempo_para_dormir (ms)** → Duração que um filósofo dorme após comer.
+   - **número_de_vezes_que_cada_filósofo_deve_comer (opcional)** → Se todos os filósofos comerem este número de vezes, a simulação termina.
+ 
+- **Comportamento**:
+
+   - Cada filósofo é representado por uma **thread**.
+   - Cada garfo é protegido por um **mutex**.
+   - Os filósofos realizam o ciclo: **pensar → pegar garfos → comer → dormir**.
+   - A simulação termina quando:
+      - Um filósofo morre (não comeu dentro de `tempo_para_morrer`), ou todos comeram pelo menos o número de vezes requerido (se fornecido).
+    
+- **Formato de Saída**:
+  ```bash
+  timestamp_in_ms [X] has taken a fork
+  timestamp_in_ms [X] is eating
+  timestamp_in_ms [X] is sleeping
+  timestamp_in_ms [X] is thinking
+  timestamp_in_ms [X] died
+   ```
+  
+   - `timestamp_in_ms`:  tempo desde o início da simulação.
+   - `X`: número do filósofo.
+   - A morte deve ser registada dentro de 10 ms após ocorrer.
+   - Os registos não devem sobrepor-se ou intercalar-se.
+
+- **Regras Globais**:
+
+   - **Sem variáveis globais**.
+   - **Sem data races** — todos os dados partilhados protegidos por mutexes.
+   - O programa deve libertar toda a memória alocada dinamicamente e evitar fugas.
+ 
+- **Makefile**:
+
+   - Regras: `NAME`, `all`, `clean`, `fclean`, `re`
+   - Compila com `-Wall -Wextra -Werror -pthread`
+   - Saída: `philo`
+ 
+- **Exemplo de Utilização**:
+  ```bash
+  ./philo 5 800 200 200
+   0 [1] has taken a fork
+   0 [1] has taken a fork
+   0 [1] is eating
+   0 [5] has taken a fork
+   0 [3] has taken a fork
+   0 [3] has taken a fork
+   0 [3] is eating
+   200 [1] is sleeping
+   200 [3] is sleeping
+   200 [5] has taken a fork
+   200 [5] is eating
+   300 [2] has taken a fork
+   300 [2] has taken a fork
+   300 [2] is eating
+   400 [3] is thinking
+   400 [1] is thinking
+   400 [5] is sleeping
+   400 [4] has taken a fork
+   400 [4] has taken a fork
+   400 [4] is eating
+   500 [1] has taken a fork
+   500 [2] is sleeping
+   500 [1] has taken a fork
+   500 [1] is eating
+   500 [3] has taken a fork
+   600 [4] is sleeping
+   ...
+   ```
+
+- **Resultados de Aprendizagem**:
+
+   - Compreender **multithreading** e **prevenção de race conditions**.
+   - Aprender **sincronização** usando **mutexes**.
+   - Gerir temporização e concorrência de forma segura em C.
+   - Desenhar comportamento determinístico em ambientes concorrentes.
+
+</details>
+
+---
