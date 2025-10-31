@@ -526,7 +526,6 @@ A small 2D game using the MiniLibX library.
 
 ---
 
-
 ## Projects Rank 03
 
 ### 1. 🐚 [Minishell](https://github.com/andrade950/42minishell)
@@ -604,3 +603,109 @@ A simplified shell inspired by **Bash**, developed to deepen the understanding o
   - Emulating Bash-like behavior within strict C and 42 norm constraints.
 
 </details> 
+
+### 2. 🍝 [Philosophers](https://github.com/andrade950/42philosophers)
+
+An exploration of multithreading and synchronization in C, simulating the famous Dining Philosophers problem using threads and mutexes.
+
+<details> <summary> 🛈 Philosophers Project Details</summary>
+
+- **Objective**:  
+  Implement a simulation where several philosophers alternate between eating, sleeping, and thinking — ensuring that none starve, and managing access to shared resources (forks) using **threads** and **mutexes**.
+
+- **Program Name**: `philo`
+
+- **Allowed Functions**:  
+  `memset`, `printf`, `malloc`, `free`, `write`,  
+  `usleep`, `gettimeofday`,  
+  `pthread_create`, `pthread_detach`, `pthread_join`,  
+  `pthread_mutex_init`, `pthread_mutex_destroy`, `pthread_mutex_lock`, `pthread_mutex_unlock`
+
+- **Arguments**:  
+  ```bash
+  ./philo number_of_philosophers time_to_die time_to_eat time_to_sleep [number_of_times_each_philosopher_must_eat]
+  number_of_philosophers → Number of philosophers (and forks).
+  ```
+  
+    - **time_to_die (ms)** → Time a philosopher can live without eating.
+    - **time_to_eat (ms)** → Duration a philosopher spends eating (holding both forks).
+    - **time_to_sleep (ms)** → Duration a philosopher sleeps after eating.
+    - **number_of_times_each_philosopher_must_eat (optional)** → If all philosophers eat this many times, the simulation ends.
+ 
+- **Behavior**:
+
+   - Each philosopher is represented by a **thread**.
+   - Each fork is protected by a **mutex**.
+   - Philosophers perform the cycle: **thinking → taking forks → eating → sleeping**.
+   - The simulation stops when:
+      - A philosopher dies (hasn’t eaten within `time_to_die`), or
+      - All have eaten at least the required number of times (if provided).
+    
+- **Output Format**:
+  ```bash
+  timestamp_in_ms [X] has taken a fork
+  timestamp_in_ms [X] is eating
+  timestamp_in_ms [X] is sleeping
+  timestamp_in_ms [X] is thinking
+  timestamp_in_ms [X] died
+   ```
+  
+   - `timestamp_in_ms`: time since simulation start.
+   - `X`: philosopher number.
+   - Death must be logged within 10 ms of occurring.
+   - Logs must not overlap or interleave.
+
+- **Global Rules**:
+
+   - **No global variables**.
+   - **No data races** — all shared data protected by mutexes.
+   - The program must free all dynamically allocated memory and avoid leaks.
+ 
+- **Makefile**:
+
+   - Rules: `NAME`, `all`, `clean`, `fclean`, `re`
+   - Compiles with `-Wall -Wextra -Werror -pthread`
+   - Output: `philo`
+ 
+- **Example Usage**:
+  ```bash
+  ./philo 5 800 200 200
+   0 [1] has taken a fork
+   0 [1] has taken a fork
+   0 [1] is eating
+   0 [5] has taken a fork
+   0 [3] has taken a fork
+   0 [3] has taken a fork
+   0 [3] is eating
+   200 [1] is sleeping
+   200 [3] is sleeping
+   200 [5] has taken a fork
+   200 [5] is eating
+   300 [2] has taken a fork
+   300 [2] has taken a fork
+   300 [2] is eating
+   400 [3] is thinking
+   400 [1] is thinking
+   400 [5] is sleeping
+   400 [4] has taken a fork
+   400 [4] has taken a fork
+   400 [4] is eating
+   500 [1] has taken a fork
+   500 [2] is sleeping
+   500 [1] has taken a fork
+   500 [1] is eating
+   500 [3] has taken a fork
+   600 [4] is sleeping
+   ...
+   ```
+
+- **Learning Outcomes**:
+
+   - Understand **multithreading** and **race condition prevention**.
+   - Learn **synchronization** using **mutexes**.
+   - Manage timing and concurrency safely in C.
+   - Design deterministic behavior in concurrent environments.
+
+</details>
+
+---
