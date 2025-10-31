@@ -638,8 +638,7 @@ An exploration of multithreading and synchronization in C, simulating the famous
    - Each fork is protected by a **mutex**.
    - Philosophers perform the cycle: **thinking → taking forks → eating → sleeping**.
    - The simulation stops when:
-      - A philosopher dies (hasn’t eaten within `time_to_die`), or
-      - All have eaten at least the required number of times (if provided).
+      - A philosopher dies (hasn’t eaten within `time_to_die`), or all have eaten at least the required number of times (if provided).
     
 - **Output Format**:
   ```bash
