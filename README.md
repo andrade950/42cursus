@@ -708,3 +708,157 @@ An exploration of multithreading and synchronization in C, simulating the famous
 </details>
 
 ---
+
+## Projects Rank 04
+
+### 1. 🎮 [cub3D](https://github.com/andrade950/42cub3d)
+My first RayCaster with miniLibX - A 3D maze exploration game inspired by Wolfenstein 3D.
+
+<details>
+  <summary> 🛈 cub3D Project Details</summary>
+
+- **Objective**: Create a "realistic" 3D graphical representation of the inside of a maze from a first-person perspective using ray-casting principles.
+
+- **Program Name**: `cub3D`
+
+- **Allowed Functions**:  
+  | Function | Description |
+  |----------|-------------|
+  | `open`, `close`, `read`, `write` | File operations |
+  | `printf`, `malloc`, `free` | Standard I/O and memory management |
+  | `perror`, `strerror`, `exit` | Error handling |
+  | `gettimeofday` | Time management |
+  | Math library functions (`-lm`) | Mathematical calculations |
+  | All MinilibX functions | Graphics rendering |
+
+- **Arguments**:  
+  ```bash
+  ./cub3D maps/map.cub
+  ```
+
+- **Scene File Format (.cub)**:
+  - **Textures**:
+    - `NO ./path_to_north_texture` - North wall texture
+    - `SO ./path_to_south_texture` - South wall texture  
+    - `WE ./path_to_west_texture` - West wall texture
+    - `EA ./path_to_east_texture` - East wall texture
+  
+  - **Colors**:
+    - `F R,G,B` - Floor color (RGB values 0-255)
+    - `C R,G,B` - Ceiling color (RGB values 0-255)
+  
+  - **Map**:
+    - `0` - Empty space
+    - `1` - Wall
+    - `N`, `S`, `E`, `W` - Player starting position and orientation
+
+- **Example .cub File**:
+  ```
+  NO ./textures/north.xpm
+  SO ./textures/south.xpm
+  WE ./textures/west.xpm
+  EA ./textures/east.xpm
+  
+  F 220,100,0
+  C 225,30,0
+  
+  1111111111111111111111111
+  1000000000110000000000001
+  1011000001110000000000001
+  100100000000000000000000111111111
+  111111111011000001110000000000001
+  100000000011000001110111111111111
+  11110111111111011100000010001
+  11110111111111011101010010001
+  11000000110101011100000010001
+  10000000000000001100000010001
+  10000000000000001101010010001
+  11000001110101011111011110N0111
+  11110111 1110101 101111010001
+  11111111 1111111 111111111111
+  ```
+
+- **Controls**:
+  | Key | Action |
+  |-----|--------|
+  | `W` | Move forward |
+  | `A` | Move left |
+  | `S` | Move backward |
+  | `D` | Move right |
+  | `←` | Rotate camera left |
+  | `→` | Rotate camera right |
+  | `ESC` | Exit game |
+
+- **Features**:
+  - First-person 3D perspective using ray-casting
+  - Different wall textures based on orientation (N/S/E/W)
+  - Customizable floor and ceiling colors
+  - Smooth window management
+  - Real-time camera rotation and movement
+  - Proper error handling for invalid maps
+
+- **Map Requirements**:
+  - Must be surrounded by walls (closed map)
+  - Can only contain characters: `0`, `1`, `N`, `S`, `E`, `W`
+  - Must have exactly one player starting position
+  - Spaces are valid and must be handled correctly
+  - Map must be the last element in the .cub file
+
+- **Project Guidelines**:
+  - Code must follow the **42 Norm**
+  - No memory leaks allowed
+  - Must use MiniLibX library
+  - Smooth window management required
+  - Proper error messages for invalid configurations
+
+- **Makefile**:
+  - Rules: `NAME`, `all`, `clean`, `fclean`, `re`, `bonus`
+  - Compiles with `-Wall -Wextra -Werror`
+  - Links with math library (`-lm`) and MiniLibX
+
+- **Bonus Features** (if implemented):
+  - Wall collisions
+  - Minimap system
+  - Interactive doors (open/close)
+  - Animated sprites
+  - Mouse camera rotation
+  - Floor and ceiling textures
+  - HUD elements
+  - Weapons and shooting mechanics
+
+- **Example Usage**:
+  ```bash
+  # Compile the project
+  make
+  
+  # Run with a map file
+  ./cub3D maps/example.cub
+  
+  # Compile with bonuses
+  make bonus
+  ./cub3D maps/bonus_map.cub
+  ```
+
+- **Error Handling**:
+  - Invalid file extension
+  - Missing or duplicate configuration elements
+  - Invalid RGB values (outside 0-255 range)
+  - Invalid map characters
+  - Map not closed by walls
+  - Missing textures or invalid paths
+  - Multiple player positions or no player
+  
+  All errors output: `Error\n` followed by a descriptive message.
+
+- **Challenges and Learning Outcomes**:
+  - Understanding **ray-casting algorithms** and 3D projection
+  - Working with **MiniLibX** for graphics rendering
+  - Implementing **efficient rendering** and game loops
+  - Parsing complex configuration files
+  - Managing **player physics** and collision detection
+  - Creating immersive game experiences with limited resources
+  - Applying **trigonometry** and **vector mathematics** in practice
+
+</details>
+
+---
