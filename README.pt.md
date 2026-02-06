@@ -711,3 +711,157 @@ Uma exploração de multithreading e sincronização em C, simulando o famoso pr
 </details>
 
 ---
+
+## Projetos Rank 04
+
+### 1. 🎮 [cub3D](https://github.com/andrade950/42cub3d)
+Meu primeiro RayCaster com miniLibX - Um jogo de exploração de labirinto em 3D inspirado no Wolfenstein 3D.
+
+<details>
+  <summary> 🛈 Detalhes do Projeto cub3D</summary>
+
+- **Objetivo**: Criar uma representação gráfica 3D "realista" do interior de um labirinto a partir de uma perspectiva em primeira pessoa usando os princípios de ray-casting.
+
+- **Nome do Programa**: `cub3D`
+
+- **Funções Permitidas**:  
+  | Função | Descrição |
+  |----------|-------------|
+  | `open`, `close`, `read`, `write` | Operações de arquivo |
+  | `printf`, `malloc`, `free` | I/O padrão e gerenciamento de memória |
+  | `perror`, `strerror`, `exit` | Tratamento de erros |
+  | `gettimeofday` | Gerenciamento de tempo |
+  | Funções da biblioteca math (`-lm`) | Cálculos matemáticos |
+  | Todas as funções da MinilibX | Renderização gráfica |
+
+- **Argumentos**:  
+  ```bash
+  ./cub3D maps/mapa.cub
+  ```
+
+- **Formato do Arquivo de Cena (.cub)**:
+  - **Texturas**:
+    - `NO ./caminho_textura_norte` - Textura da parede norte
+    - `SO ./caminho_textura_sul` - Textura da parede sul
+    - `WE ./caminho_textura_oeste` - Textura da parede oeste
+    - `EA ./caminho_textura_leste` - Textura da parede leste
+  
+  - **Cores**:
+    - `F R,G,B` - Cor do chão (valores RGB 0-255)
+    - `C R,G,B` - Cor do teto (valores RGB 0-255)
+  
+  - **Mapa**:
+    - `0` - Espaço vazio
+    - `1` - Parede
+    - `N`, `S`, `E`, `W` - Posição inicial e orientação do jogador
+
+- **Exemplo de Arquivo .cub**:
+  ```
+  NO ./texturas/norte.xpm
+  SO ./texturas/sul.xpm
+  WE ./texturas/oeste.xpm
+  EA ./texturas/leste.xpm
+  
+  F 220,100,0
+  C 225,30,0
+  
+  1111111111111111111111111
+  1000000000110000000000001
+  1011000001110000000000001
+  100100000000000000000000111111111
+  111111111011000001110000000000001
+  100000000011000001110111111111111
+  11110111111111011100000010001
+  11110111111111011101010010001
+  11000000110101011100000010001
+  10000000000000001100000010001
+  10000000000000001101010010001
+  11000001110101011111011110N0111
+  11110111 1110101 101111010001
+  11111111 1111111 111111111111
+  ```
+
+- **Controles**:
+  | Tecla | Ação |
+  |-------|------|
+  | `W` | Mover para frente |
+  | `A` | Mover para esquerda |
+  | `S` | Mover para trás |
+  | `D` | Mover para direita |
+  | `←` | Rodar câmera à esquerda |
+  | `→` | Rodar câmera à direita |
+  | `ESC` | Sair do jogo |
+
+- **Funcionalidades**:
+  - Perspectiva 3D em primeira pessoa usando ray-casting
+  - Diferentes texturas de parede baseadas na orientação (N/S/E/W)
+  - Cores personalizáveis para chão e teto
+  - Gerenciamento suave de janela
+  - Rotação e movimento de câmera em tempo real
+  - Tratamento adequado de erros para mapas inválidos
+
+- **Requisitos do Mapa**:
+  - Deve estar cercado por paredes (mapa fechado)
+  - Pode conter apenas os caracteres: `0`, `1`, `N`, `S`, `E`, `W`
+  - Deve ter exatamente uma posição inicial do jogador
+  - Espaços são válidos e devem ser tratados corretamente
+  - O mapa deve ser o último elemento no arquivo .cub
+
+- **Diretrizes do Projeto**:
+  - O código deve seguir a **Norma 42**
+  - Não são permitidos vazamentos de memória
+  - Deve usar a biblioteca MiniLibX
+  - Gerenciamento suave de janela é obrigatório
+  - Mensagens de erro adequadas para configurações inválidas
+
+- **Makefile**:
+  - Regras: `NAME`, `all`, `clean`, `fclean`, `re`, `bonus`
+  - Compila com `-Wall -Wextra -Werror`
+  - Liga com a biblioteca math (`-lm`) e MiniLibX
+
+- **Funcionalidades Bônus** (se implementadas):
+  - Colisões com paredes
+  - Sistema de minimapa
+  - Portas interativas (abrir/fechar)
+  - Sprites animados
+  - Rotação de câmera com mouse
+  - Texturas de chão e teto
+  - Elementos de HUD
+  - Armas e mecânicas de disparo
+
+- **Exemplo de Uso**:
+  ```bash
+  # Compilar o projeto
+  make
+  
+  # Executar com um arquivo de mapa
+  ./cub3D maps/exemplo.cub
+  
+  # Compilar com bônus
+  make bonus
+  ./cub3D maps/mapa_bonus.cub
+  ```
+
+- **Tratamento de Erros**:
+  - Extensão de arquivo inválida
+  - Elementos de configuração ausentes ou duplicados
+  - Valores RGB inválidos (fora do intervalo 0-255)
+  - Caracteres de mapa inválidos
+  - Mapa não fechado por paredes
+  - Texturas ausentes ou caminhos inválidos
+  - Múltiplas posições de jogador ou nenhum jogador
+  
+  Todos os erros retornam: `Error\n` seguido de uma mensagem descritiva.
+
+- **Desafios e Resultados de Aprendizagem**:
+  - Compreensão de **algoritmos de ray-casting** e projeção 3D
+  - Trabalhar com **MiniLibX** para renderização gráfica
+  - Implementar **renderização eficiente** e loops de jogo
+  - Parsear arquivos de configuração complexos
+  - Gerenciar **física do jogador** e detecção de colisão
+  - Criar experiências de jogo imersivas com recursos limitados
+  - Aplicar **trigonometria** e **matemática vetorial** na prática
+
+</details>
+
+---
