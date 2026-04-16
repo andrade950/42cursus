@@ -6,7 +6,7 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
 
 ## Projects Rank 00
 
-### 1. 📚 [Libft](Libft)
+### 1. 📚 [Libft](https://github.com/andrade950/42Libft)
    A personal library that reproduces standard C library functions, enabling their use in other cursus projects.
 
    <details>
@@ -124,7 +124,7 @@ Welcome to the repository of my projects developed in the **42 Cursus**! Here yo
 
 ## Projects Rank 01
 
-### 1. 🖨️ [ft_printf](ft_printf) 
+### 1. 🖨️ [ft_printf](https://github.com/andrade950/42ft_printf) 
 A custom implementation of the versatile `printf` function, enhancing the foundational C programming skills by handling variadic functions and formatted output.
 
 <details>
@@ -183,7 +183,7 @@ A custom implementation of the versatile `printf` function, enhancing the founda
 
 </details>
 
-### 2. 📄 [get_next_line](get_next_line)
+### 2. 📄 [get_next_line](https://github.com/andrade950/42get_next_line)
 A function that returns lines read from a file descriptor, exploring concepts like static variables in C.
 
 <details>
