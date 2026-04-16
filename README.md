@@ -251,7 +251,7 @@ A function that returns lines read from a file descriptor, exploring concepts li
 
 </details> 
 
-### 3. 💿 [Born2beroot](Born2beroot)
+### 3. 💿 [Born2beroot](https://github.com/andrade950/42Born2beroot)
 
 A system administration project introducing concepts of virtualization and secure server configuration.
 
