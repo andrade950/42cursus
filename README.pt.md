@@ -253,7 +253,7 @@ Uma função que retorna linhas lidas de um descritor de arquivo, explorando con
 
 </details>
 
-### 3. 💿 [Born2beroot](Born2beroot) 
+### 3. 💿 [Born2beroot](https://github.com/andrade950/42Born2beroot) 
 
 Um projeto de administração de sistemas que introduz conceitos de virtualização e configuração de servidores seguros.
 
