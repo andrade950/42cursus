@@ -864,4 +864,233 @@ Meu primeiro RayCaster com miniLibX - Um jogo de exploração de labirinto em 3D
 
 </details>
 
+### 2. 🔷 [CPP's](https://github.com/andrade950/42CPP-s)
+> **A journey through C++ modules, covering from 00 to 04.**
+
+- ### 2.1. 🏫 [CPP00](https://github.com/andrade950/42CPP-s/tree/main/CPP00)
+Introdução ao C++ — Namespaces, classes, funções membro, stdio streams, listas de inicialização, static, const e outros conceitos básicos.
+
+<details>
+  <summary> 🛈 Detalhes do CPP00</summary>
+
+- **Objetivo**: Familiarização com as funcionalidades básicas do C++, transitando de C. Todo o código segue o padrão **C++98**.
+
+- **Conceitos-Chave**:
+  - Namespaces
+  - Classes e funções membro
+  - stdio streams (`std::cout`, `std::cin`)
+  - Listas de inicialização
+  - Palavras-chave `static` e `const`
+  - Orthodox Canonical Class Form (antevisão)
+
+- **Exercícios**:
+
+  **Exercício 00 — Megaphone**
+  - Um programa simples que recebe argumentos por linha de comandos e exibe-os em maiúsculas.
+  - Se não forem fornecidos argumentos, exibe `* LOUD AND UNBEARABLE FEEDBACK NOISE *`.
+  - Ficheiros: `Makefile`, `megaphone.cpp`
+
+  **Exercício 01 — My Awesome PhoneBook**
+  - Um programa de lista telefónica que implementa duas classes: `PhoneBook` e `Contact`.
+  - Armazena até 8 contactos (o mais antigo é substituído quando está cheio). Não é permitida alocação dinâmica.
+  - Suporta três comandos: `ADD`, `SEARCH` e `EXIT`.
+  - A exibição do `SEARCH` usa colunas de 10 caracteres de largura, alinhadas à direita, com truncagem indicada por um `.`.
+  - Ficheiros: `Makefile`, `*.cpp`, `*.{h,hpp}`
+
+- **Regras Gerais**:
+  - Compilar com `c++ -Wall -Wextra -Werror -std=c++98`.
+  - Proibido usar `using namespace`, `friend`, contentores ou algoritmos da STL.
+  - Proibido usar `*printf()`, `*alloc()` ou `free()`.
+  - Sem implementações de funções nos ficheiros header (exceto templates).
+  - Todos os headers devem ter include guards.
+
+- **Desafios e Aprendizagem**:
+  - Transição da mentalidade C para C++.
+  - Compreensão do design de classes, encapsulamento e I/O baseado em streams.
+  - Formatação de output com `<iomanip>`.
+      
+</details>
+
+- ### 2.2. 🧠 [CPP01](https://github.com/andrade950/42CPP-s/tree/main/CPP01)
+Alocação de memória, ponteiros para membros, referências e instruções switch.
+
+<details>
+  <summary> 🛈 Detalhes do CPP01</summary>
+
+- **Objetivo**: Explorar a gestão de memória em C++, compreender a diferença entre alocação na stack e no heap, e aprender referências e ponteiros para funções membro.
+
+- **Conceitos-Chave**:
+  - `new` e `delete` (alocação no heap)
+  - Decisões de alocação: Stack vs Heap
+  - Referências vs Ponteiros
+  - Ponteiros para funções membro
+  - File streams (`std::ifstream`, `std::ofstream`)
+  - Instruções `switch`
+
+- **Exercícios**:
+
+  **Exercício 00 — BraiiiiiiinnnzzzZ**
+  - Implementação de uma classe `Zombie` com um atributo `name` e uma função membro `announce()`.
+  - Duas funções: `newZombie()` (heap) e `randomChump()` (stack).
+  - Ensina quando preferir alocação no heap vs stack.
+
+  **Exercício 01 — Moar brainz!**
+  - Função `zombieHorde()` que aloca N zombies numa **única** chamada `new[]`.
+  - Reforça a alocação de arrays e o uso correto de `delete[]`.
+
+  **Exercício 02 — HI THIS IS BRAIN**
+  - Demonstra que uma referência e um ponteiro para a mesma variável contêm o mesmo endereço e valor.
+  - Desmistifica as referências como uma sintaxe alternativa para manipulação de endereços.
+
+  **Exercício 03 — Unnecessary Violence**
+  - Classes `Weapon`, `HumanA` e `HumanB`.
+  - `HumanA` tem sempre uma arma (usar referência); `HumanB` pode não ter (usar ponteiro).
+  - Ensina a diferença prática entre referências e ponteiros.
+
+  **Exercício 04 — Sed is for Losers**
+  - Programa que abre um ficheiro e escreve uma cópia substituindo cada ocorrência de `s1` por `s2`.
+  - `std::string::replace` é proibido — deve-se usar `find` e substituição manual.
+
+  **Exercício 05 — Harl 2.0**
+  - Classe `Harl` com quatro níveis de queixa: `DEBUG`, `INFO`, `WARNING`, `ERROR`.
+  - Obrigatório usar **ponteiros para funções membro** — sem cadeias de if/else.
+
+  **Exercício 06 — Harl Filter** *(opcional)*
+  - Filtra o output do Harl a partir de um nível específico.
+  - Obrigatório usar uma **instrução switch** com comportamento de fall-through.
+
+- **Desafios e Aprendizagem**:
+  - Domínio da alocação no heap e evitar fugas de memória (memory leaks).
+  - Compreensão da diferença semântica entre referências e ponteiros.
+  - Uso de ponteiros para funções membro para uma lógica de despacho mais limpa.
+      
+</details>
+
+- ### 2.3. ⚖️ [CPP02](https://github.com/andrade950/42CPP-s/tree/main/CPP02)
+Polimorfismo ad-hoc, sobrecarga de operadores e a Orthodox Canonical Class Form.
+
+<details>
+  <summary> 🛈 Detalhes do CPP02</summary>
+
+- **Objetivo**: Aprender a sobrecarga de operadores e aplicar a Forma Canónica Ortodoxa (OCF) em todas as classes a partir deste módulo.
+
+- **Conceitos-Chave**:
+  - Orthodox Canonical Form: construtor por defeito, construtor de cópia, operador de atribuição por cópia, destrutor
+  - Números de vírgula fixa (fixed-point)
+  - Sobrecarga de operadores (aritméticos, comparação, incremento/decremento, inserção)
+  - Funções membro estáticas
+  - Polimorfismo ad-hoc
+
+- **Orthodox Canonical Form (obrigatório a partir do Módulo 02)**:
+  Cada classe deve implementar:
+  - Construtor por defeito
+  - Construtor de cópia
+  - Operador de atribuição por cópia
+  - Destrutor
+
+- **Exercícios**:
+
+  **Exercício 00 — A Minha Primeira Classe em OCF**
+  - Classe `Fixed` que representa um número de vírgula fixa com 8 bits fracionários.
+  - Atributos privados: valor inteiro bruto + constante estática `fractionalBits = 8`.
+  - Métodos públicos: OCF + `getRawBits()` / `setRawBits()`.
+
+  **Exercício 01 — Rumo a uma Classe de Números de Vírgula Fixa Mais Útil**
+  - Adiciona construtores a partir de `int` e `float`, convertendo para a representação de vírgula fixa.
+  - Adiciona `toFloat()`, `toInt()` e sobrecarrega o operador de inserção `<<`.
+  - Autorizado: `roundf` de `<cmath>`.
+
+  **Exercício 02 — Agora Sim**
+  - Sobrecarga dos 6 operadores de comparação (`>`, `<`, `>=`, `<=`, `==`, `!=`).
+  - Sobrecarga dos 4 operadores aritméticos (`+`, `-`, `*`, `/`).
+  - Sobrecarga de pré/pós incremento e decremento pelo menor valor representável ε.
+  - Adiciona funções estáticas `min()` e `max()` para referências mutáveis e constantes.
+
+- **Desafios e Aprendizagem**:
+  - Compreensão profunda de aritmética de vírgula fixa.
+  - Escrita de sobrecargas de operadores limpas e reutilizáveis.
+  - Aplicação consistente da OCF em todas as classes.
+      
+</details>
+
+- ### 2.4. 🧬 [CPP03](https://github.com/andrade950/42CPP-s/tree/main/CPP03)
+Herança.
+
+<details>
+  <summary> 🛈 Detalhes do CPP03</summary>
+
+- **Objetivo**: Compreender a herança de classes em C++, incluindo herança simples e múltipla, encadeamento de construção/destruição e o problema do diamante.
+
+- **Conceitos-Chave**:
+  - Herança simples
+  - Herança múltipla
+  - Encadeamento de construtores e destrutores
+  - Herança virtual (problema do diamante)
+  - Overriding de atributos e métodos
+
+- **Exercícios**:
+
+  **Exercício 00 — Aaaaand... OPEN!**
+  - Classe base `ClapTrap` com atributos privados: `name`, `hitPoints` (10), `energyPoints` (10), `attackDamage` (0).
+  - Métodos públicos: `attack()`, `takeDamage()`, `beRepaired()` — cada um custa 1 ponto de energia e imprime uma mensagem descritiva.
+  - Construtores e destrutores devem imprimir mensagens.
+
+  **Exercício 01 — Serena, My Love!**
+  - `ScavTrap` herda de `ClapTrap`, alterando os status: HP=100, EP=50, AD=20.
+  - Substitui `attack()` com uma mensagem diferente.
+  - Adiciona a habilidade especial `guardGate()`.
+  - Demonstra o encadeamento correto de construção/destruição.
+
+  **Exercício 02 — Trabalho Repetitivo**
+  - `FragTrap` herda de `ClapTrap`, status: HP=100, EP=100, AD=30.
+  - Adiciona a habilidade especial `highFivesGuys()`.
+  - Prática adicional de encadeamento de herança.
+
+- **Desafios e Aprendizagem**:
+  - Compreender como os construtores e destrutores encadeiam entre níveis de herança.
+  - Resolver o problema do diamante com herança virtual.
+  - Desenhar hierarquias de classes de forma limpa e correta.
+      
+</details>
+
+- ### 2.5. 🐾 [CPP04](https://github.com/andrade950/42CPP-s/tree/main/CPP04)
+Polimorfismo de subtipo, classes abstratas e interfaces.
+
+<details>
+  <summary> 🛈 Detalhes do CPP04</summary>
+
+- **Objetivo**: Dominar o polimorfismo de subtipo através de funções virtuais, classes abstratas e classes puramente abstratas (interfaces). Compreender cópias profundas (deep copies) e destrutores virtuais.
+
+- **Conceitos-Chave**:
+  - Funções virtuais e polimorfismo de subtipo
+  - Classes abstratas (funções virtuais puras)
+  - Interfaces (classes puramente abstratas)
+  - Destrutores virtuais
+  - Cópias profundas (Deep copies)
+
+- **Exercícios**:
+
+  **Exercício 00 — Polimorfismo**
+  - Classe base `Animal` com um atributo protegido `std::string type` e um método virtual `makeSound()`.
+  - `Dog` e `Cat` herdam de `Animal`, cada um substituindo `makeSound()` com o som apropriado.
+  - `WrongAnimal` / `WrongCat` demonstram o que acontece **sem** funções virtuais.
+  - Chamar `makeSound()` através de um ponteiro da classe base deve invocar a versão da classe derivada.
+
+  **Exercício 01 — I Don't Want to Set the World on Fire**
+  - Adiciona uma classe `Brain` contendo um array de 100 `std::string ideas`.
+  - `Dog` e `Cat` possuem cada um um `Brain*` (criado no construtor, destruído no destrutor).
+  - Cópias de `Dog`/`Cat` devem ser **cópias profundas** — um novo `Brain` é alocado e o seu conteúdo duplicado.
+  - Um array de `Animal*` (metade cães, metade gatos) deve ser totalmente eliminado sem fugas de memória.
+
+  **Exercício 02 — Classe Abstrata**
+  - Torna a classe `Animal` (ou `AAnimal`) abstrata ao declarar `makeSound()` como virtual pura (`= 0`).
+  - Impede a instanciação direta da classe base.
+
+- **Desafios e Aprendizagem**:
+  - Perceber por que os destrutores virtuais são essenciais.
+  - Implementar cópias profundas corretamente para evitar bugs de estado partilhado.
+  - Projetar sistemas flexíveis através de classes abstratas e interfaces.
+      
+</details>
+
 ---
