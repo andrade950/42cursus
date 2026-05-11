@@ -864,7 +864,7 @@ My first RayCaster with miniLibX - A 3D maze exploration game inspired by Wolfen
 ### 2. 🔷 [CPP's](https://github.com/andrade950/42CPP-s)
 > **A journey through C++ modules, covering from 00 to 04.**
 
-- ### 2.1. 🏫 [CPP00](https://github.com/andrade950/42CPP-s/tree/main/CPP00)
+- #### 2.1. 🏫 [CPP00](https://github.com/andrade950/42CPP-s/tree/main/CPP00)
    Introduction to C++ — Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and other basic concepts.
     
    <details>
@@ -909,7 +909,7 @@ My first RayCaster with miniLibX - A 3D maze exploration game inspired by Wolfen
         
    </details>
  
-- ### 2.2. 🧠 [CPP01](https://github.com/andrade950/42CPP-s/tree/main/CPP01)
+- #### 2.2. 🧠 [CPP01](https://github.com/andrade950/42CPP-s/tree/main/CPP01)
    Memory allocation, pointers to members, references, and switch statements.
     
    <details>
@@ -965,7 +965,7 @@ My first RayCaster with miniLibX - A 3D maze exploration game inspired by Wolfen
       
    </details>
  
-- ### 2.3. ⚖️ [CPP02](https://github.com/andrade950/42CPP-s/tree/main/CPP02)
+- #### 2.3. ⚖️ [CPP02](https://github.com/andrade950/42CPP-s/tree/main/CPP02)
    Ad-hoc polymorphism, operator overloading, and the Orthodox Canonical Class Form.
     
    <details>
@@ -1013,7 +1013,7 @@ My first RayCaster with miniLibX - A 3D maze exploration game inspired by Wolfen
         
    </details>
  
-- ### 2.4. 🧬 [CPP03](https://github.com/andrade950/42CPP-s/tree/main/CPP03)
+- #### 2.4. 🧬 [CPP03](https://github.com/andrade950/42CPP-s/tree/main/CPP03)
    Inheritance.
     
    <details>
@@ -1054,7 +1054,7 @@ My first RayCaster with miniLibX - A 3D maze exploration game inspired by Wolfen
       
    </details>
  
-- ### 2.5. 🐾 [CPP04](https://github.com/andrade950/42CPP-s/tree/main/CPP04)
+- #### 2.5. 🐾 [CPP04](https://github.com/andrade950/42CPP-s/tree/main/CPP04)
    Subtype polymorphism, abstract classes, and interfaces.
     
    <details>
