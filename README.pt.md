@@ -867,7 +867,7 @@ Meu primeiro RayCaster com miniLibX - Um jogo de exploração de labirinto em 3D
 ### 2. 🔷 [CPP's](https://github.com/andrade950/42CPP-s)
 > **A journey through C++ modules, covering from 00 to 04.**
 
-- ### 2.1. 🏫 [CPP00](https://github.com/andrade950/42CPP-s/tree/main/CPP00)
+- #### 2.1. 🏫 [CPP00](https://github.com/andrade950/42CPP-s/tree/main/CPP00)
    Introdução ao C++ — Namespaces, classes, funções membro, stdio streams, listas de inicialização, static, const e outros conceitos básicos.
    
    <details>
@@ -911,7 +911,7 @@ Meu primeiro RayCaster com miniLibX - Um jogo de exploração de labirinto em 3D
          
    </details>
 
-- ### 2.2. 🧠 [CPP01](https://github.com/andrade950/42CPP-s/tree/main/CPP01)
+- #### 2.2. 🧠 [CPP01](https://github.com/andrade950/42CPP-s/tree/main/CPP01)
    Alocação de memória, ponteiros para membros, referências e instruções switch.
    
    <details>
@@ -966,7 +966,7 @@ Meu primeiro RayCaster com miniLibX - Um jogo de exploração de labirinto em 3D
          
    </details>
 
-- ### 2.3. ⚖️ [CPP02](https://github.com/andrade950/42CPP-s/tree/main/CPP02)
+- #### 2.3. ⚖️ [CPP02](https://github.com/andrade950/42CPP-s/tree/main/CPP02)
    Polimorfismo ad-hoc, sobrecarga de operadores e a Orthodox Canonical Class Form.
    
    <details>
@@ -1013,7 +1013,7 @@ Meu primeiro RayCaster com miniLibX - Um jogo de exploração de labirinto em 3D
          
    </details>
 
-- ### 2.4. 🧬 [CPP03](https://github.com/andrade950/42CPP-s/tree/main/CPP03)
+- #### 2.4. 🧬 [CPP03](https://github.com/andrade950/42CPP-s/tree/main/CPP03)
    Herança.
    
    <details>
@@ -1053,7 +1053,7 @@ Meu primeiro RayCaster com miniLibX - Um jogo de exploração de labirinto em 3D
          
    </details>
 
-- ### 2.5. 🐾 [CPP04](https://github.com/andrade950/42CPP-s/tree/main/CPP04)
+- #### 2.5. 🐾 [CPP04](https://github.com/andrade950/42CPP-s/tree/main/CPP04)
    Polimorfismo de subtipo, classes abstratas e interfaces.
    
    <details>
