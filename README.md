@@ -865,237 +865,280 @@ My first RayCaster with miniLibX - A 3D maze exploration game inspired by Wolfen
 > **A journey through C++ modules, covering from 00 to 04.**
 
 - ### 2.1. 🏫 [CPP00](https://github.com/andrade950/42CPP-s/tree/main/CPP00)
-Introduction to C++ — Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and other basic concepts.
- 
-<details>
-   
-  <summary> 🛈 CPP00 Details</summary>
-   
-- **Objective**: Get acquainted with the basic features of C++, transitioning from C. All code follows the **C++98 standard**.
-   
-- **Key Concepts**:
-  - Namespaces
-  - Classes and member functions
-  - stdio streams (`std::cout`, `std::cin`)
-  - Initialization lists
-  - `static` and `const` keywords
-  - Orthodox Canonical Class Form (preview)
-   
-- **Exercises**:
-   
-  **Exercise 00 — Megaphone**
-  - A simple program that takes command-line arguments and outputs them in uppercase.
-  - If no arguments are provided, outputs `* LOUD AND UNBEARABLE FEEDBACK NOISE *`.
-  - Files: `Makefile`, `megaphone.cpp`
-   
-  **Exercise 01 — My Awesome PhoneBook**
-  - A phonebook program implementing two classes: `PhoneBook` and `Contact`.
-  - Stores up to 8 contacts (oldest is replaced when full). No dynamic allocation allowed.
-  - Supports three commands: `ADD`, `SEARCH`, and `EXIT`.
-  - The `SEARCH` display uses 10-character-wide columns, right-aligned, with truncation indicated by a `.`.
-  - Files: `Makefile`, `*.cpp`, `*.{h,hpp}`
-   
-- **General Rules**:
-  - Compile with `c++ -Wall -Wextra -Werror -std=c++98`.
-  - No `using namespace`, no `friend`, no STL containers or algorithms.
-  - No `*printf()`, `*alloc()`, or `free()`.
-  - No function implementations in header files (except templates).
-  - All headers must have include guards.
-   
-- **Challenges and Learning Outcomes**:
-  - Transitioning from C to C++ mindset.
-  - Understanding class design, encapsulation, and stream-based I/O.
-  - Formatting output with `<iomanip>`.
-     
-</details>
+   Introduction to C++ — Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and other basic concepts.
+    
+   <details>
+      
+     <summary> 🛈 CPP00 Details</summary>
+      
+   - **Objective**: Get acquainted with the basic features of C++, transitioning from C. All code follows the **C++98 standard**.
+      
+   - **Key Concepts**:
+     - Namespaces
+     - Classes and member functions
+     - stdio streams (`std::cout`, `std::cin`)
+     - Initialization lists
+     - `static` and `const` keywords
+     - Orthodox Canonical Class Form (preview)
+      
+   - **Exercises**:
+      
+     **Exercise 00 — Megaphone**
+     - A simple program that takes command-line arguments and outputs them in uppercase.
+     - If no arguments are provided, outputs `* LOUD AND UNBEARABLE FEEDBACK NOISE *`.
+     - Files: `Makefile`, `megaphone.cpp`
+      
+     **Exercise 01 — My Awesome PhoneBook**
+     - A phonebook program implementing two classes: `PhoneBook` and `Contact`.
+     - Stores up to 8 contacts (oldest is replaced when full). No dynamic allocation allowed.
+     - Supports three commands: `ADD`, `SEARCH`, and `EXIT`.
+     - The `SEARCH` display uses 10-character-wide columns, right-aligned, with truncation indicated by a `.`.
+     - Files: `Makefile`, `*.cpp`, `*.{h,hpp}`
+      
+   - **General Rules**:
+     - Compile with `c++ -Wall -Wextra -Werror -std=c++98`.
+     - No `using namespace`, no `friend`, no STL containers or algorithms.
+     - No `*printf()`, `*alloc()`, or `free()`.
+     - No function implementations in header files (except templates).
+     - All headers must have include guards.
+      
+   - **Challenges and Learning Outcomes**:
+     - Transitioning from C to C++ mindset.
+     - Understanding class design, encapsulation, and stream-based I/O.
+     - Formatting output with `<iomanip>`.
+        
+   </details>
  
 - ### 2.2. 🧠 [CPP01](https://github.com/andrade950/42CPP-s/tree/main/CPP01)
-Memory allocation, pointers to members, references, and switch statements.
- 
-<details>
-   
-  <summary> 🛈 CPP01 Details</summary>
-   
-- **Objective**: Explore memory management in C++, understand the difference between stack and heap allocation, and learn references and pointers to member functions.
-   
-- **Key Concepts**:
-  - `new` and `delete` (heap allocation)
-  - Stack vs heap allocation decisions
-  - References vs pointers
-  - Pointers to member functions
-  - File streams (`std::ifstream`, `std::ofstream`)
-  - `switch` statements
-   
-- **Exercises**:
-   
-  **Exercise 00 — BraiiiiiiinnnzzzZ**
-  - Implement a `Zombie` class with a `name` attribute and an `announce()` member function.
-  - Two functions: `newZombie()` (heap) and `randomChump()` (stack).
-  - Teaches when to prefer heap vs stack allocation.
-   
-  **Exercise 01 — Moar brainz!**
-  - `zombieHorde()` function allocates N zombies in a **single** `new[]` call.
-  - Reinforces array allocation and proper `delete[]` usage.
-   
-  **Exercise 02 — HI THIS IS BRAIN**
-  - Demonstrates that a reference and a pointer to the same variable hold the same address and value.
-  - Demystifies references as an alternate syntax for address manipulation.
-   
-  **Exercise 03 — Unnecessary Violence**
-  - `Weapon`, `HumanA`, and `HumanB` classes.
-  - `HumanA` always has a weapon (use a reference); `HumanB` may not (use a pointer).
-  - Teaches the practical difference between references and pointers.
-   
-  **Exercise 04 — Sed is for Losers**
-  - Program that opens a file and writes a copy replacing every occurrence of `s1` with `s2`.
-  - `std::string::replace` is forbidden — must use `find` and manual substitution.
-   
-  **Exercise 05 — Harl 2.0**
-  - `Harl` class with four complaint levels: `DEBUG`, `INFO`, `WARNING`, `ERROR`.
-  - Must use **pointers to member functions** — no if/else chains allowed.
-   
-  **Exercise 06 — Harl Filter** *(optional)*
-  - Filters Harl's output from a given level upwards.
-  - Must use a **switch statement** with fall-through behaviour.
-   
-- **Challenges and Learning Outcomes**:
-  - Mastering heap allocation and avoiding memory leaks.
-  - Understanding the semantic difference between references and pointers.
-  - Using pointers to member functions for cleaner dispatch logic.
-   
-</details>
+   Memory allocation, pointers to members, references, and switch statements.
+    
+   <details>
+      
+     <summary> 🛈 CPP01 Details</summary>
+      
+   - **Objective**: Explore memory management in C++, understand the difference between stack and heap allocation, and learn references and pointers to member functions.
+      
+   - **Key Concepts**:
+     - `new` and `delete` (heap allocation)
+     - Stack vs heap allocation decisions
+     - References vs pointers
+     - Pointers to member functions
+     - File streams (`std::ifstream`, `std::ofstream`)
+     - `switch` statements
+      
+   - **Exercises**:
+      
+     **Exercise 00 — BraiiiiiiinnnzzzZ**
+     - Implement a `Zombie` class with a `name` attribute and an `announce()` member function.
+     - Two functions: `newZombie()` (heap) and `randomChump()` (stack).
+     - Teaches when to prefer heap vs stack allocation.
+      
+     **Exercise 01 — Moar brainz!**
+     - `zombieHorde()` function allocates N zombies in a **single** `new[]` call.
+     - Reinforces array allocation and proper `delete[]` usage.
+      
+     **Exercise 02 — HI THIS IS BRAIN**
+     - Demonstrates that a reference and a pointer to the same variable hold the same address and value.
+     - Demystifies references as an alternate syntax for address manipulation.
+      
+     **Exercise 03 — Unnecessary Violence**
+     - `Weapon`, `HumanA`, and `HumanB` classes.
+     - `HumanA` always has a weapon (use a reference); `HumanB` may not (use a pointer).
+     - Teaches the practical difference between references and pointers.
+      
+     **Exercise 04 — Sed is for Losers**
+     - Program that opens a file and writes a copy replacing every occurrence of `s1` with `s2`.
+     - `std::string::replace` is forbidden — must use `find` and manual substitution.
+      
+     **Exercise 05 — Harl 2.0**
+     - `Harl` class with four complaint levels: `DEBUG`, `INFO`, `WARNING`, `ERROR`.
+     - Must use **pointers to member functions** — no if/else chains allowed.
+      
+     **Exercise 06 — Harl Filter** *(optional)*
+     - Filters Harl's output from a given level upwards.
+     - Must use a **switch statement** with fall-through behaviour.
+      
+   - **Challenges and Learning Outcomes**:
+     - Mastering heap allocation and avoiding memory leaks.
+     - Understanding the semantic difference between references and pointers.
+     - Using pointers to member functions for cleaner dispatch logic.
+      
+   </details>
  
 - ### 2.3. ⚖️ [CPP02](https://github.com/andrade950/42CPP-s/tree/main/CPP02)
-Ad-hoc polymorphism, operator overloading, and the Orthodox Canonical Class Form.
- 
-<details>
-   
-  <summary> 🛈 CPP02 Details</summary>
-   
-- **Objective**: Learn operator overloading and enforce the Orthodox Canonical Class Form (OCF) on all classes from this module onwards.
-   
-- **Key Concepts**:
-  - Orthodox Canonical Form: default constructor, copy constructor, copy assignment operator, destructor
-  - Fixed-point numbers
-  - Operator overloading (arithmetic, comparison, increment/decrement, insertion)
-  - Static member functions
-  - Ad-hoc polymorphism
-   
-- **Orthodox Canonical Form (required from Module 02 onward)**:
-  Every class must implement:
-  - Default constructor
-  - Copy constructor
-  - Copy assignment operator
-  - Destructor
-   
-- **Exercises**:
-   
-  **Exercise 00 — My First Class in Orthodox Canonical Form**
-  - `Fixed` class representing a fixed-point number with 8 fractional bits.
-  - Private: raw integer value + static constant `fractionalBits = 8`.
-  - Public: OCF methods + `getRawBits()` / `setRawBits()`.
-   
-  **Exercise 01 — Towards a More Useful Fixed-Point Number Class**
-  - Adds constructors from `int` and `float`, converting to fixed-point representation.
-  - Adds `toFloat()`, `toInt()`, and overloads the `<<` insertion operator.
-  - Authorized: `roundf` from `<cmath>`.
-     
-  **Exercise 02 — Now We're Talking**
-  - Overloads all 6 comparison operators (`>`, `<`, `>=`, `<=`, `==`, `!=`).
-  - Overloads 4 arithmetic operators (`+`, `-`, `*`, `/`).
-  - Overloads pre/post increment and decrement by the smallest representable ε.
-  - Adds static `min()` and `max()` functions for both mutable and const references.
-     
-- **Challenges and Learning Outcomes**:
-  - Deeply understanding fixed-point arithmetic.
-  - Writing clean, reusable operator overloads.
-  - Applying the OCF consistently across all classes.
-     
-</details>
+   Ad-hoc polymorphism, operator overloading, and the Orthodox Canonical Class Form.
+    
+   <details>
+      
+     <summary> 🛈 CPP02 Details</summary>
+      
+   - **Objective**: Learn operator overloading and enforce the Orthodox Canonical Class Form (OCF) on all classes from this module onwards.
+      
+   - **Key Concepts**:
+     - Orthodox Canonical Form: default constructor, copy constructor, copy assignment operator, destructor
+     - Fixed-point numbers
+     - Operator overloading (arithmetic, comparison, increment/decrement, insertion)
+     - Static member functions
+     - Ad-hoc polymorphism
+      
+   - **Orthodox Canonical Form (required from Module 02 onward)**:
+     Every class must implement:
+     - Default constructor
+     - Copy constructor
+     - Copy assignment operator
+     - Destructor
+      
+   - **Exercises**:
+      
+     **Exercise 00 — My First Class in Orthodox Canonical Form**
+     - `Fixed` class representing a fixed-point number with 8 fractional bits.
+     - Private: raw integer value + static constant `fractionalBits = 8`.
+     - Public: OCF methods + `getRawBits()` / `setRawBits()`.
+      
+     **Exercise 01 — Towards a More Useful Fixed-Point Number Class**
+     - Adds constructors from `int` and `float`, converting to fixed-point representation.
+     - Adds `toFloat()`, `toInt()`, and overloads the `<<` insertion operator.
+     - Authorized: `roundf` from `<cmath>`.
+        
+     **Exercise 02 — Now We're Talking**
+     - Overloads all 6 comparison operators (`>`, `<`, `>=`, `<=`, `==`, `!=`).
+     - Overloads 4 arithmetic operators (`+`, `-`, `*`, `/`).
+     - Overloads pre/post increment and decrement by the smallest representable ε.
+     - Adds static `min()` and `max()` functions for both mutable and const references.
+        
+   - **Challenges and Learning Outcomes**:
+     - Deeply understanding fixed-point arithmetic.
+     - Writing clean, reusable operator overloads.
+     - Applying the OCF consistently across all classes.
+        
+   </details>
  
 - ### 2.4. 🧬 [CPP03](https://github.com/andrade950/42CPP-s/tree/main/CPP03)
-Inheritance.
- 
-<details>
-   
-  <summary> 🛈 CPP03 Details</summary>
-   
-- **Objective**: Understand class inheritance in C++, including single and multiple inheritance, construction/destruction chaining, and the diamond problem.
-   
-- **Key Concepts**:
-  - Single inheritance
-  - Multiple inheritance
-  - Construction and destruction chaining
-  - Virtual inheritance (diamond problem)
-  - Attribute and method overriding
-   
-- **Exercises**:
-   
-  **Exercise 00 — Aaaaand... OPEN!**
-  - Base class `ClapTrap` with private attributes: `name`, `hitPoints` (10), `energyPoints` (10), `attackDamage` (0).
-  - Public methods: `attack()`, `takeDamage()`, `beRepaired()` — each costs 1 energy point and prints a descriptive message.
-  - Constructors and destructor must print messages.
-   
-  **Exercise 01 — Serena, My Love!**
-  - `ScavTrap` inherits from `ClapTrap`, overriding stats: HP=100, EP=50, AD=20.
-  - Overrides `attack()` with a different message.
-  - Adds `guardGate()` special ability.
-  - Demonstrates proper construction/destruction chaining.
-   
-  **Exercise 02 — Repetitive Work**
-  - `FragTrap` inherits from `ClapTrap`, stats: HP=100, EP=100, AD=30.
-  - Adds `highFivesGuys()` special ability.
-  - Further practice with inheritance chaining.
-   
-- **Challenges and Learning Outcomes**:
-  - Understanding how constructors and destructors chain across inheritance levels.
-  - Resolving the diamond problem with virtual inheritance.
-  - Designing class hierarchies cleanly and correctly.
-   
-</details>
+   Inheritance.
+    
+   <details>
+      
+     <summary> 🛈 CPP03 Details</summary>
+      
+   - **Objective**: Understand class inheritance in C++, including single and multiple inheritance, construction/destruction chaining, and the diamond problem.
+      
+   - **Key Concepts**:
+     - Single inheritance
+     - Multiple inheritance
+     - Construction and destruction chaining
+     - Virtual inheritance (diamond problem)
+     - Attribute and method overriding
+      
+   - **Exercises**:
+      
+     **Exercise 00 — Aaaaand... OPEN!**
+     - Base class `ClapTrap` with private attributes: `name`, `hitPoints` (10), `energyPoints` (10), `attackDamage` (0).
+     - Public methods: `attack()`, `takeDamage()`, `beRepaired()` — each costs 1 energy point and prints a descriptive message.
+     - Constructors and destructor must print messages.
+      
+     **Exercise 01 — Serena, My Love!**
+     - `ScavTrap` inherits from `ClapTrap`, overriding stats: HP=100, EP=50, AD=20.
+     - Overrides `attack()` with a different message.
+     - Adds `guardGate()` special ability.
+     - Demonstrates proper construction/destruction chaining.
+      
+     **Exercise 02 — Repetitive Work**
+     - `FragTrap` inherits from `ClapTrap`, stats: HP=100, EP=100, AD=30.
+     - Adds `highFivesGuys()` special ability.
+     - Further practice with inheritance chaining.
+      
+   - **Challenges and Learning Outcomes**:
+     - Understanding how constructors and destructors chain across inheritance levels.
+     - Resolving the diamond problem with virtual inheritance.
+     - Designing class hierarchies cleanly and correctly.
+      
+   </details>
  
 - ### 2.5. 🐾 [CPP04](https://github.com/andrade950/42CPP-s/tree/main/CPP04)
-Subtype polymorphism, abstract classes, and interfaces.
- 
+   Subtype polymorphism, abstract classes, and interfaces.
+    
+   <details>
+      
+     <summary> 🛈 CPP04 Details</summary>
+      
+   - **Objective**: Master subtype polymorphism through virtual functions, abstract classes, and interface-like pure abstract classes. Understand deep copying and virtual destructors.
+     
+   - **Key Concepts**:
+     - Virtual functions and subtype polymorphism
+     - Abstract classes (pure virtual functions)
+     - Interfaces (pure abstract classes)
+     - Virtual destructors
+     - Deep copies
+      
+   - **Exercises**:
+      
+     **Exercise 00 — Polymorphism**
+     - `Animal` base class with a `std::string type` protected attribute and a virtual `makeSound()`.
+     - `Dog` and `Cat` inherit from `Animal`, each overriding `makeSound()` with appropriate output.
+     - `WrongAnimal` / `WrongCat` demonstrate what happens **without** virtual functions.
+     - Calling `makeSound()` through a base pointer must invoke the derived class version.
+      
+     **Exercise 01 — I Don't Want to Set the World on Fire**
+     - Adds a `Brain` class containing an array of 100 `std::string ideas`.
+     - `Dog` and `Cat` each own a `Brain*` (created in constructor, deleted in destructor).
+     - Copies of `Dog`/`Cat` must be **deep copies** — a new `Brain` is allocated and its content duplicated.
+     - Array of `Animal*` (half dogs, half cats) must be fully deleted without leaks.
+      
+     **Exercise 02 — Abstract Class**
+     - Makes `Animal` (or `AAnimal`) abstract by declaring `makeSound()` as pure virtual (`= 0`).
+     - Prevents direct instantiation of the base class.
+     - Everything else continues to work as before.
+      
+      
+   - **Challenges and Learning Outcomes**:
+     - Understanding why virtual destructors are essential.
+     - Implementing deep copies correctly to avoid shared state bugs.
+     - Designing flexible systems through abstract classes and interfaces.
+     - Managing memory carefully when unequipping Materias without deleting them.
+      
+   </details>
+
+### 3. 🌐 [NetPractice](https://github.com/andrade950/42NetPractice)
+A practical networking exercise introducing the basics of TCP/IP addressing, subnet masks, and routing.
+
 <details>
-   
-  <summary> 🛈 CPP04 Details</summary>
-   
-- **Objective**: Master subtype polymorphism through virtual functions, abstract classes, and interface-like pure abstract classes. Understand deep copying and virtual destructors.
-  
+  <summary> 🛈 NetPractice Project Details</summary>
+
+- **Objective**: Configure small-scale simulated networks across 10 levels, solving networking problems by correctly assigning IP addresses, subnet masks, and default gateways so that all devices can communicate.
+
 - **Key Concepts**:
-  - Virtual functions and subtype polymorphism
-  - Abstract classes (pure virtual functions)
-  - Interfaces (pure abstract classes)
-  - Virtual destructors
-  - Deep copies
-   
-- **Exercises**:
-   
-  **Exercise 00 — Polymorphism**
-  - `Animal` base class with a `std::string type` protected attribute and a virtual `makeSound()`.
-  - `Dog` and `Cat` inherit from `Animal`, each overriding `makeSound()` with appropriate output.
-  - `WrongAnimal` / `WrongCat` demonstrate what happens **without** virtual functions.
-  - Calling `makeSound()` through a base pointer must invoke the derived class version.
-   
-  **Exercise 01 — I Don't Want to Set the World on Fire**
-  - Adds a `Brain` class containing an array of 100 `std::string ideas`.
-  - `Dog` and `Cat` each own a `Brain*` (created in constructor, deleted in destructor).
-  - Copies of `Dog`/`Cat` must be **deep copies** — a new `Brain` is allocated and its content duplicated.
-  - Array of `Animal*` (half dogs, half cats) must be fully deleted without leaks.
-   
-  **Exercise 02 — Abstract Class**
-  - Makes `Animal` (or `AAnimal`) abstract by declaring `makeSound()` as pure virtual (`= 0`).
-  - Prevents direct instantiation of the base class.
-  - Everything else continues to work as before.
-   
-   
+  - TCP/IP addressing
+  - Subnet masks (e.g., 255.255.255.0, CIDR notation)
+  - Default gateways and routing tables
+  - Routers and switches
+  - OSI model layers
+
+- **How It Works**:
+  - A training interface is launched locally via `run.sh`, which starts a web server and opens the exercise page in your browser.
+  - Each level presents a non-functioning network diagram with editable fields (IP addresses, masks, routes).
+  - Adjust the unshaded fields until the network configuration is valid, then verify using **[Check again]**.
+  - Export each completed level's configuration using **[Get my config]** and save it to your Git repository.
+
+- **Fallback (if run.sh fails)**:
+```bash
+  python3 -m http.server 49242
+  # Then navigate to http://localhost:49242
+```
+
+- **Submission**:
+  - 10 exported configuration files (one per level) must be placed at the root of the repository.
+  - Your intranet login must be entered in the training interface before exporting.
+
+- **Defense**:
+  - During evaluation, you must successfully complete 3 random levels within a limited time.
+  - No external tools are allowed (a basic calculator like `bc` is tolerated).
+
 - **Challenges and Learning Outcomes**:
-  - Understanding why virtual destructors are essential.
-  - Implementing deep copies correctly to avoid shared state bugs.
-  - Designing flexible systems through abstract classes and interfaces.
-  - Managing memory carefully when unequipping Materias without deleting them.
-   
+  - Understanding how IP addressing and subnetting work in practice.
+  - Reading and configuring routing tables correctly.
+  - Recognising why a gateway is missing or an IP is invalid from network logs.
+  - Developing systematic thinking for diagnosing network connectivity issues.
+
 </details>
 
 ---
